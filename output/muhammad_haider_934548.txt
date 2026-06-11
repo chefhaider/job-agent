@@ -1,0 +1,223 @@
+\documentclass[letterpaper]{article}
+\usepackage[12pt]{extsizes} % Font size 12pt
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsNames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{accsupp} % ATS-friendly icons
+\setlength{\multicolsep}{-3.0pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%------------------ Section formatting ------------------
+\titleformat{\section}{
+  \vspace{10pt plus 4pt minus 2pt}
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}] % commented out horizontal line
+
+% Ensure machine-readable PDF
+\pdfgentounicode=1
+
+%------------------ ATS-Friendly Icon Helper ------------------
+\newcommand{\atsicon}[1]{%
+    \BeginAccSupp{ActualText={}}#1\EndAccSupp{}%
+}
+
+%------------------ Custom commands ------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\  % Company bold
+    \textit{\small #3} & \textit{\small #4} \\ % Role italic
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{setspace}
+\setstretch{1.05}
+
+\usepackage{graphicx}
+\usepackage{background}
+
+\backgroundsetup{
+  scale=1, color=black, opacity=0.15, angle=0,
+  position=current page.north west, nodeanchor=north west,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg12.jpg}}
+}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge\scshape Muhammad Haider \textcolor{gray}{Zaidi}} \\ \vspace{4pt}
+    
+    \small 
+    \atsicon{\faPhone}\ +49 1523 1698988 ~ 
+    \atsicon{\faEnvelope}\ \href{mailto:mhaiderzaidi21@gmail.com}{\underline{mhaiderzaidi21@gmail.com}} ~ 
+    \atsicon{\faLinkedin}\ \href{https://linkedin.com/in/muhammad-haider-zaidi}{\underline{linkedin.com/in/muhammad-haider-zaidi}} \\ \vspace{2pt}
+    \atsicon{\faGithub}\ \href{https://github.com/chefhaider}{\underline{github.com/chefhaider}} ~
+    \atsicon{\faHome}\ Bavaria, Germany ~
+    \atsicon{\faBirthdayCake}\ 21.06.2000
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Programming}{: Python, C++, Swift, SQL, Javascript} \\
+    \textbf{Deep Learning}{: PyTorch, TensorFlow, Transformers, CNNs, YOLO, Generative Models, Audio ML, Music AI} \\
+    \textbf{MLOps}{: Docker, Kubernetes, AWS SageMaker, FastAPI, MLOps Pipelines, Real-time System Optimization, On-Device Deployment} \\
+    \textbf{Data Engineering}{: PySpark, Airflow, ETL Pipelines, Data Processing, Data Augmentation Pipelines, Cloud Computing (AWS, GCP)}
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {German National Metrology Institute (PTB)}{March 2024 -- Present}
+  {Student Assistant Researcher}{Berlin, DE}
+\resumeItemListStart
+  \resumeItem{Designed and evaluated deep learning models, optimizing model performance and training efficiency for production-ready applications.}
+  \resumeItem{Explored and implemented novel deep learning architectures to enhance model accuracy and stability for real-world applications.}
+  \resumeItem{Collaborated with machine learning researchers on innovative AI concepts, contributing to the product development lifecycle.}
+  \resumeItem{Developed data augmentation pipelines and monitoring tools to ensure robust model performance and data quality.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Folio3}{March 2022 -- Nov 2023}
+  {Machine Learning Engineer}{California, US (remote)}
+\resumeItemListStart
+  \resumeItem{Developed and deployed real-time AI algorithms, improving vitiligo segmentation accuracy by 94\% and increasing inference speed by 5x, leveraging Docker and FastAPI for production.}
+  \resumeItem{Engineered and optimized a real-time tennis foul detection system with TensorRT, reducing compute cost and processing time by 6x, showcasing expertise in on-device optimization.}
+  \resumeItem{Managed MLOps pipelines on AWS SageMaker, addressing data drift in YOLO models and maintaining Kubernetes infrastructure, aligning with cloud computing platforms experience.}
+  \resumeItem{Developed proof-of-concept AI-driven features using YOLO, few-shot learning, and CNN architectures for client demonstrations, contributing to early ideation.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Manda GmbH}{March 2024 - June 2024}
+  {Werkstudent Python Developer}{Nürnberg, DE}
+  \resumeItemListStart
+    \resumeItem{Designed and implemented full-stack web applications providing AI-based services using Flask, demonstrating end-to-end application development.}
+    \resumeItem{Developed AI-driven chatbot applications leveraging the OpenAI API and LLM frameworks, focusing on intelligent assistance features.}
+  \resumeItemListEnd
+
+
+\resumeSubheading
+  {Freelance}{July 2020 -- March 2022}
+  {Data Engineer}{Remote}
+\resumeItemListStart  
+  \resumeItem{Developed and optimized ETL pipelines for structured and unstructured data, ensuring robust data processing for machine learning applications.}
+  \resumeItem{Automated data ingestion and cleaning workflows, enhancing data quality for AI models and supporting data augmentation pipelines.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {CAFA 6: Protein Function Prediction}{2022}
+  {Deep Learning Competition}{}
+\resumeItemListStart
+  \resumeItem{Architected a weighted-probability ensemble for protein function prediction, leveraging advanced feature extraction and mitigating taxonomic bias.}
+  \resumeItem{Enhanced model accuracy by 4% through custom feature engineering and designing effective data augmentation strategies.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Razanlytics: Real-time Bitcoin Price Forecasting}{2022}
+  {Thesis Project}{}
+\resumeItemListStart
+  \resumeItem{Developed and optimized a real-time Bitcoin price forecasting system using advanced machine learning models.}
+  \resumeItem{Focused on integrating machine learning models into a consumer-facing application for predictive analytics.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Saaz: AI Self-Playing Chitrali Sitar}{2023}
+  {Signal Processing, Music Generation}{}
+\resumeItemListStart
+  \resumeItem{Designed and implemented a real-time audio processing system integrating temporal dependencies for AI-driven music generation, featured on Coke Studio.}
+  \resumeItem{Developed and optimized transformer-based models for sequence prediction in audio generation tasks, demonstrating expertise in cutting-edge machine learning applications for music.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Hugging Face}{Open-Source} 
+  {Contributor}{}
+\resumeItemListStart  
+  \resumeItem{Co-authored technical documentation and implementation for Zero-shot Image Classification on the Hugging Face Hub, demonstrating contribution to open-source ML research.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Friedrich Alexander Universität}{Present}
+  {Master of Science in Artificial Intelligence} {Erlangen, DE}
+\resumeItemListStart
+  \resumeItem{Specialized in deep learning for computer vision and spatio-temporal modeling.}
+  \resumeItem{Relevant coursework: Advanced Neural Networks, Computer Vision, Autonomous Systems.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {National University of Computer and Emerging Sciences}{Aug 2018 -- June 2022}
+  {Bachelor of Science in Computer Science}{Karachi, PK}
+\resumeItemListStart
+\resumeItem{Dean's List of Honor.}
+  \resumeItem{Specialized in Machine Learning and Computer Vision with focus on time-series analysis.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{PyTorch}: Deep Neural Networks with PyTorch \textbar{} \textbf{Coursera}: TensorFlow Developer Certificate \textbar{} \textbf{Databricks}: Lakehouse Fundamentals \textbar{} \textbf{Datacamp}: Computer Vision in Python
+    }}
+\end{itemize}
+
+\end{document}

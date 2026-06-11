@@ -1,0 +1,237 @@
+You are an expert cover letter writer specializing in tech and AI roles.
+
+Your task is to generate a tailored, compelling LaTeX cover letter for the
+provided job description using my professional experience below.
+
+STRICT OUTPUT RULES
+- Output only raw LaTeX. No markdown. No explanations.
+- Start with \documentclass and end with \end{document}.
+- Only return compilable LaTeX (balanced braces, no unescaped %, &, #, _).
+
+COVER LETTER REQUIREMENTS
+- Before writing, extract the top 5 technical keywords and top 3 soft themes
+  from the job description and build the letter around them.
+- Write 3 tight paragraphs:
+    1. Opening: why this company and role specifically, name the job title.
+    2. Body: 2-3 strongest matching experiences with measurable impact and
+       JD keywords. Reframe for relevance, not reinvention: preserve original
+       domain, core responsibilities, and technologies.
+    3. Closing: confident call to action, enthusiasm, fit.
+- Tone: professional, confident, human. Not generic. Not robotic.
+- Do not invent tools, results, or responsibilities not in my experience.
+- Keep total letter length to one page.
+
+LATEX TEMPLATE TO USE
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fontawesome}
+\usepackage{accsupp}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{background}
+
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setstretch{1.15}
+\pdfgentounicode=1
+
+\newcommand{\atsicon}[1]{%
+    \BeginAccSupp{ActualText={}}#1\EndAccSupp{}%
+}
+
+\backgroundsetup{
+  scale=1, color=black, opacity=0.15, angle=0,
+  position=current page.north west, nodeanchor=north west,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg12.jpg}}
+}
+
+\begin{document}
+
+%── HEADER ───────────────────────────────────────────────────────────────────
+\begin{center}
+    {\Huge\scshape Muhammad Haider \textcolor{gray}{Zaidi}} \\ \vspace{4pt}
+    \small
+    \atsicon{\faPhone}\ +49 1523 1698988 ~
+    \atsicon{\faEnvelope}\ \href{mailto:mhaiderzaidi21@gmail.com}{\underline{mhaiderzaidi21@gmail.com}} ~
+    \atsicon{\faLinkedin}\ \href{https://linkedin.com/in/muhammad-haider-zaidi}{\underline{linkedin.com/in/muhammad-haider-zaidi}} \\ \vspace{2pt}
+    \atsicon{\faGithub}\ \href{https://github.com/chefhaider}{\underline{github.com/chefhaider}} ~
+    \atsicon{\faHome}\ Bavaria, Germany
+\end{center}
+
+\vspace{8pt}
+
+%── DATE AND RECIPIENT ────────────────────────────────────────────────────────
+\noindent
+\textbf{[HIRING MANAGER OR TEAM NAME]} \\
+\textbf{[COMPANY NAME]} \\
+[CITY], Germany \\
+\vspace{4pt}
+\noindent \today
+
+\vspace{12pt}
+
+%── SUBJECT LINE ─────────────────────────────────────────────────────────────
+\noindent
+\textbf{Re: Application for [JOB TITLE]}
+
+\vspace{10pt}
+
+%── BODY ─────────────────────────────────────────────────────────────────────
+\noindent
+[OPENING PARAGRAPH: express genuine interest in the specific company and role.
+Reference the job title. Show you understand what they do.]
+
+\vspace{8pt}
+
+\noindent
+[BODY PARAGRAPH: highlight 2-3 strongest matching experiences with measurable
+impact and JD keywords. Be specific. Use numbers where available.]
+
+\vspace{8pt}
+
+\noindent
+[CLOSING PARAGRAPH: confident call to action. Express enthusiasm for the
+opportunity. Invite next steps.]
+
+\vspace{12pt}
+
+\noindent
+Sincerely, \\
+\vspace{20pt}
+\noindent
+\textbf{Muhammad Haider Zaidi}
+
+\end{document}
+
+MY EXPERIENCE:
+
+German National Metrology Institute (PTB):
+- Designed and evaluated deep learning models for metrological applications,
+  improving model performance and training efficiency.
+- Explored novel architectures and physics-informed hybrid loss functions to
+  improve model accuracy and stability.
+- Collaborated with PhD researchers for a publication at FLOMEKO conference.
+- Built dashboards for data visualisation and model performance monitoring.
+
+Manda GmbH:
+- Full-stack development of a website providing AI-based services using Flask,
+  HTML, CSS.
+- Built an AI chatbot application using the OpenAI API and relevant LLM
+  tools/frameworks.
+
+Folio3:
+- Improved vitiligo segmentation accuracy to 94% and increased speed by 5x
+  using AI algorithms. Deployed with Docker and FastAPI.
+- Developed a real-time tennis foul detection system with TensorRT, reducing
+  compute cost and time by 6x.
+- Managed MLOps pipelines on AWS SageMaker, addressing YOLO model data drift,
+  and maintained Kubernetes infrastructure.
+- Conducted educational sessions on machine learning and big data at
+  universities.
+- Developed POCs using YOLO, few-shot learning, and CNN for client demos.
+
+Hugging Face:
+- Co-authored the Zero-shot Image Classification technical documentation and
+  implementation page on the Hugging Face Hub.
+
+Freelance:
+- Built web scrapers and ETL pipelines for structured and unstructured data.
+- Automated data ingestion and cleaning workflows for client analytics use cases.
+
+MY PROJECTS:
+
+Saaz: AI Self-Playing Chitrali Sitar (Signal Processing, Music LLMs):
+- Collaborated to build the world's first AI-driven self-playing Chitrali Sitar,
+  combining signal processing and music generation LLMs.
+- Project featured on Coke Studio in a music video by Hassan Raheem.
+
+CAFA 6: Protein Function Prediction (Kaggle Competition):
+- Architected a weighted-probability ensemble integrating DPFunc and DeepGOPlus,
+  using AlphaFold for feature extraction and taxonomic bias mitigation.
+- Increased model accuracy by 4% through custom feature engineering across MF,
+  CC, and BP namespaces.
+
+Hugging Face Open-Source Contributor:
+- Co-authored Zero-shot Image Classification documentation and implementation
+  page.
+
+JOB I AM APPLYING FOR (VERY IMPORTANT):Company: Mercedes-Benz Tech Innovation
+Job Title: Software Engineer / Data Scientist AI (d/m/w/x)
+Job Description:
+Jetzt bewerben!
+
+Wir sind Mercedes-Benz Tech Innovation - doch wir bauen keine Autos: Wir definieren die Zukunft mit Technologie.
+
+Als größte Tech Company der Mercedes-Benz Group AG arbeiten rund 2.500 Mitarbeitende in Ulm, im Raum Stuttgart, in Berlin und in Karlsruhe sowie in internationalen Tech Hubs an den Techniktrends der Mobilität von morgen.
+
+Uns verbindet die Begeisterung für Innovation und neueste Technologien – kombiniert mit der Überzeugung, dass individuelle Freiheit und Eigenverantwortung für echten Fortschritt entscheidend sind. Wir sind #techinnovators.
+
+Mehr über uns erfahren Mercedes-Benz Tech Innovation GmbH
+
+Welche Aufgaben erwarten dich?
+
+Als Software Engineer oder Data Scientist AI (d/m/w/x) bereicherst du unser interdisziplinäres Team im Bereich Artificial Intelligence und bringst End2End KI-Lösungen direkt in den praktischen Einsatz.
+Dein Aufgabenschwerpunkt konzentriert sich auf die eigenständige Konzeption und Umsetzung von Cloud-Lösungen, insbesondere im Kontext von Machine Learning, Deep Learning und Generativer KI.
+Deine Rolle umfasst sowohl die Abstimmung von Bedarfen mit relevanten Stakeholdern als auch die Konzeption und Umsetzung von Infrastrukturen und Lösungen, stets unter Sicherstellung der hohen Qualitäts- und Verlässlichkeitsstandards der Mercedes-Benz AG.
+Du wirkst in Projekten mit, die vielfältige Aspekte der Mercedes-Benz AG Wertschöpfungskette abdecken – von internem Informationsmanagement über Kundendaten Management bis hin zur Optimierung von Werkstattprozessen. Ein besonderer aktueller Fokus liegt dabei auf der beschleunigten Integration neuer KI-Entwicklungen in alle Bereiche der Mercedes-Benz AG, zum Beispiel mit Hilfe von Multi-Agenten Systemen.
+Du arbeitest mit vielfältigen neuen Technologien und Methoden der KI und Cloud-nativen Softwareentwicklung, darunter PyTorch, TensorFlow, HuggingFace, LangGraph, und entwickelst in Python sowie JavaScript auf Azure, AWS und GCP.
+Bei der Gestaltung, Entwicklung und Implementierung zukunftsweisender Lösungen wirkst du aktiv mit und kannst deine Aufgaben zudem um Anforderungs-, Produkt- oder Projektmanagement ergänzen.
+
+Wie passt du in unser Team?
+
+Mit einem abgeschlossenen Master-Studium in Informatik, Wirtschaftsinformatik oder einer vergleichbaren Ausbildung legst du ein solides Fundament, wobei mindestens drei bis fünf Jahre praktische Berufserfahrung im AI-Umfeld erforderlich sind.
+Deine Begeisterung gilt der Überführung verlässlicher KI in relevante Anwendungen, wofür du hervorragende Programmierkenntnisse in Java, Python und SQL mitbringst und Kenntnisse in JavaScript und Frontend (React) sind dabei ein Plus.
+Du bringst ein ausgeprägtes Verständnis für DevOps- und MLOps-Vorgehen und -Technologien mit und idealerweise auch erweiterte Kenntnisse in Machine Learning, NLP, semantischer Wissensrepräsentation und Deep Learning.
+Deine Interessen in der Cloud-nativen Entwicklung umfassen Microsoft Azure, AWS oder GCP und besonders wertvoll sind dabei deine Kenntnisse mit Kubernetes (auch AKS) sowie Azure Databricks.
+Darüber hinaus verfolgst du aktiv die neuesten Entwicklungen im Deep Learning, der Anwendung von Foundation Models und Generativer KI (inklusive Prompt/Context Engineering und Model-Context Protocol) und legst dabei besonderen Wert auf Sicherheit, Zuverlässigkeit und Skalierbarkeit.
+Mit deiner ausgeprägten Teamfähigkeit bringst du dich aktiv ein, förderst den gegenseitigen Austausch und das gemeinsame Lernen und kommunizierst fließend in Deutsch und Englisch, sowohl in Wort als auch in Schrift.
+
+Benefits
+
+Mobiles Arbeiten
+
+Bei unserer Arbeits- und Führungskultur sind uns das „Wie“ und das „Wir“ wichtiger als das „Wo“. Freiheit und Eigenverantwortung werden deshalb bei uns großgeschrieben! Du möchtest lieber remote statt im Office arbeiten? Hier sind wir flexibel und finden nach gemeinsamer Absprache die optimale Lösung für dich und dein Team!
+
+Flexible Arbeitszeitgestaltung
+
+Wir bieten dir flexible Möglichkeiten zur Gestaltung deiner Arbeitszeit: Neben 30 Urlaubstagen und selbstständig planbaren Arbeitszeiten kannst du außerdem Plusstunden in Freizeit umwandeln und mit einem Arbeitszeitdepot dauerhaft erhalten. Dadurch schaffen wir harmonische Räume für die Vereinbarkeit von Privat- und Berufsleben. Zudem sind nahezu alle unsere Stellen geeignet, um in Teilzeit ausgeführt zu werden.
+
+Persönliche Entwicklungsmöglichkeiten
+
+Durch umfangreiche interne und externe Weiterbildungsangebote, Konferenzen und Trainings kannst du dein Know-How vertiefen und dich und dein Team weiter voranbringen. Mit Udemy Business bieten wir dir außerdem unbegrenzten Zugang zu mehr als 6.000 Online-Kursen – lernen wann immer und wo immer du willst.
+
+Begegnung auf Augenhöhe
+
+Bei Mercedes-Benz Tech Innovation sind wir ein Team! Unsere Zusammenarbeit basiert auf gegenseitigem Vertrauen und Respekt. Flache Hierarchien, eine wertschätzende Atmosphäre, Offenheit und Aufgeschlossenheit gehören bei uns zum Arbeitsalltag.
+
+Führungskarriere
+
+Wir fördern Talente! Mit innovativen Prozessen und vielfältigen Möglichkeiten entfalten wir dein Potenzial ganzheitlich: Nachdem dein Führungspotenzial bestätigt wurde, begleiten und fördern wir dich intensiv auf deinem Weg zur Führungskraft. Neben Möglichkeiten der klassischen Personalführung kannst du als „Lead Expert“ auch fachliche Verantwortung übernehmen.
+
+Health & Fitness
+
+Deine Gesundheit liegt uns am Herzen! Neben vergünstigten Sportangeboten für deine körperliche Fitness in ausgewählten Fitnessstudios der Region bieten wir dir mit Instahelp auch rund um die Uhr psychologische Beratungsmöglichkeiten an.
+
+Corporate Benefits
+
+Die Sicherheit eines Konzerns und die Flexibilität eines eigenständigen Unternehmens, das gilt nicht nur für deinen Arbeitsplatz, sondern auch für deine Finanzen: Du kannst von einer betrieblichen Altersvorsorge profitieren oder viele tolle Angebote in der Welt der Corporate Benefits entdecken.
+
+Ein Great Place to Work
+
+Auszeichnungen sagen mehr als Worte - Mercedes-Benz Tech Innovation hat bereits mehrmals die Auszeichnung „Great Place to Work – Beste Arbeitgeber“ verliehen bekommen. Vielleicht sind wir auch schon bald dein Great Place to Work!
+
+Now return the complete tailored LaTeX cover letter. Start with \documentclass. No markdown. No explanation.

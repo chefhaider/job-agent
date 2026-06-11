@@ -1,0 +1,353 @@
+You are an ATS resume expert.
+
+Your task is to take my professional summary and tailor the provided LaTeX resume template to the specific provided Job Description provided
+
+STRICT OUTPUT RULES (VERY IMPORTANT)
+Copy the entire LaTeX template verbatim and fill only the text inside existing placeholders.
+Do not alter any package name, package option, command, environment, bullet count, or section structure.
+Only return compilable LaTeX (balanced braces, no special character errors).
+
+TAILORING REQUIREMENTS
+Tailor the content to Optimize for maximum interview probability in accordance with the provided
+Extract and use keywords directly from the job description.
+Prioritize measurable impact and strong action verbs.
+Make bullets concise, ATS-friendly, and keyword-dense.
+Update Technical Skills to match job priorities.
+
+MY LATEX TEMPLATE
+
+\documentclass[letterpaper]{article}
+\usepackage[12pt]{extsizes} % Font size 12pt
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{accsupp} % ATS-friendly icons
+\setlength{\multicolsep}{-3.0pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{10pt plus 4pt minus 2pt}
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}] % commented out horizontal line
+
+\pdfgentounicode=1
+
+\newcommand{\atsicon}[1]{%
+    \BeginAccSupp{ActualText={}}#1\EndAccSupp{}%
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\  % Company bold
+    \textit{\small #3} & \textit{\small #4} \\ % Role italic
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{setspace}
+\setstretch{1.05}
+
+\usepackage{graphicx}
+\usepackage{background}
+
+\backgroundsetup{
+  scale=1, color=black, opacity=0.15, angle=0,
+  position=current page.north west, nodeanchor=north west,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg12.jpg}}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\scshape Muhammad Haider \textcolor{gray}{Zaidi}} \\ \vspace{4pt}
+    
+    \small 
+    \atsicon{\faPhone}\ +49 1523 1698988 ~ 
+    \atsicon{\faEnvelope}\ \href{mailto:mhaiderzaidi21@gmail.com}{\underline{mhaiderzaidi21@gmail.com}} ~ 
+    \atsicon{\faLinkedin}\ \href{https://linkedin.com/in/muhammad-haider-zaidi}{\underline{linkedin.com/in/muhammad-haider-zaidi}} \\ \vspace{2pt}
+    \atsicon{\faGithub}\ \href{https://github.com/chefhaider}{\underline{github.com/chefhaider}} ~
+    \atsicon{\faHome}\ Bavaria, Germany ~
+    \atsicon{\faBirthdayCake}\ 21.06.2000
+\end{center}
+
+%TECHNICAL SKILLS
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Programming}{: Python, C++, item1, item2...} \\
+    \textbf{Tools/Frameworks}{: item1, item2...} \\
+    \textbf{Competence}{: Machine Learning, MLOps, item1, item2... }
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+%EXPERIENCE
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {German National Metrology Institute (PTB)}{March 2024 -- Present}
+  {Student Assistant Researcher}{Berlin, DE}
+\resumeItemListStart
+  \resumeItem{add content}
+  \resumeItem{add content}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Folio3}{March 2022 -- Nov 2023}
+  {Machine Learning Engineer}{California, US (remote)}
+\resumeItemListStart
+  \resumeItem{add content}
+  \resumeItem{add content}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Manda GmbH}{March 2024 - June 2024}
+  {Werkstudent Python Developer}{Nürnberg, DE}
+  \resumeItemListStart
+    \resumeItem{add content}
+  \resumeItemListEnd
+
+
+\resumeSubheading
+  {Freelance}{July 2020 -- March 2022}
+  {Data Engineer}{Remote}
+\resumeItemListStart  
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%PROJECTS
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {CAFA 6: Protein Function Prediction}{2022}
+  {Deep Learning Competition}{}
+\resumeItemListStart
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Razanlytics: Real-time Bitcoin Price Forecasting}{2022}
+  {Thesis Project}{}
+\resumeItemListStart
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Saaz: AI Self-Playing Chitrali Sitar}{2023}
+  {Signal Processing, Music Generation}{}
+\resumeItemListStart
+  \resumeItem{add content}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Hugging Face}{Open-Source} 
+  {Contributor}{}
+\resumeItemListStart  
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%EDUCATION
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Friedrich Alexander Universität}{Present}
+  {Master of Science in Artificial Intelligence} {Erlangen, DE}
+\resumeItemListStart
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {National University of Computer and Emerging Sciences}{Aug 2018 -- June 2022}
+  {Bachelor of Science in Computer Science}{Karachi, PK}
+\resumeItemListStart
+\resumeItem{Dean's List of Honor}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%CERTIFICATIONS
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{PyTorch}: Deep Neural Networks with PyTorch \textbar{} \textbf{Coursera}: TensorFlow Developer Certificate \textbar{} \textbf{Databricks}: Lakehouse Fundamentals \textbar{} \textbf{Datacamp}: Computer Vision in Python
+    }}
+\end{itemize}
+
+\end{document}
+
+
+
+professional summary below
+
+MY EXPERIENCE:
+
+German National Metrology Institute (PTB):
+- Designed and evaluated deep learning models for metrological applications, improving
+  model performance and training efficiency.
+- Explored novel architectures and physics-informed hybrid loss functions to improve
+  model accuracy and stability.
+- Collaborated with PhD researchers for a publication at FLOMEKO conference.
+- Built dashboards for data visualisation and model performance monitoring.
+
+Manda GmbH:
+- Full-stack development of a website providing AI-based services using Flask, HTML, CSS.
+- Built an AI chatbot application using the OpenAI API and relevant LLM tools/frameworks.
+
+Folio3:
+- Improved vitiligo segmentation accuracy to 94% and increased speed by 5x using AI
+  algorithms. Deployed with Docker and FastAPI.
+- Developed a real-time tennis foul detection system with TensorRT, reducing compute
+  cost and time by 6x.
+- Managed MLOps pipelines on AWS SageMaker, addressing YOLO model data drift, and
+  maintained Kubernetes infrastructure.
+- Conducted educational sessions on machine learning and big data at universities.
+- Developed POCs using YOLO, few-shot learning, and CNN for client demos.
+
+Hugging Face:
+- Co-authored the Zero-shot Image Classification technical documentation and
+  implementation page on the Hugging Face Hub.
+
+Freelance:
+- Built web scrapers and ETL pipelines for structured and unstructured data.
+- Automated data ingestion and cleaning workflows for client analytics use cases.
+
+Systems Ltd. - Visionet:
+- Gained hands-on experience in Hadoop ecosystem: Hive, Sqoop, NiFi, PySpark, Airflow.
+- Authored a learning blog on data engineering concepts.
+
+MY PROJECTS:
+
+Saaz: AI Self-Playing Chitrali Sitar (Signal Processing, Music LLMs):
+- Collaborated to build the world's first AI-driven self-playing Chitrali Sitar,
+  combining signal processing and music generation LLMs.
+- Project featured on Coke Studio in a music video by Hassan Raheem.
+
+CAFA 6: Protein Function Prediction (Kaggle Competition):
+- Architected a weighted-probability ensemble integrating DPFunc and DeepGOPlus,
+  using AlphaFold for feature extraction and taxonomic bias mitigation.
+- Increased model accuracy by 4% through custom feature engineering across MF, CC,
+  and BP namespaces.
+
+Hugging Face Open-Source Contributor:
+- Co-authored Zero-shot Image Classification documentation and implementation page.
+
+
+
+JOB IM APPLYING FOR(VERY IMPORTANT):Company: Mercedes-Benz Tech Innovation
+Job Title: Software Engineer / Data Scientist AI (d/m/w/x)
+Job Description:
+Jetzt bewerben!
+
+Wir sind Mercedes-Benz Tech Innovation - doch wir bauen keine Autos: Wir definieren die Zukunft mit Technologie.
+
+Als größte Tech Company der Mercedes-Benz Group AG arbeiten rund 2.500 Mitarbeitende in Ulm, im Raum Stuttgart, in Berlin und in Karlsruhe sowie in internationalen Tech Hubs an den Techniktrends der Mobilität von morgen.
+
+Uns verbindet die Begeisterung für Innovation und neueste Technologien – kombiniert mit der Überzeugung, dass individuelle Freiheit und Eigenverantwortung für echten Fortschritt entscheidend sind. Wir sind #techinnovators.
+
+Mehr über uns erfahren Mercedes-Benz Tech Innovation GmbH
+
+Welche Aufgaben erwarten dich?
+
+Als Software Engineer oder Data Scientist AI (d/m/w/x) bereicherst du unser interdisziplinäres Team im Bereich Artificial Intelligence und bringst End2End KI-Lösungen direkt in den praktischen Einsatz.
+Dein Aufgabenschwerpunkt konzentriert sich auf die eigenständige Konzeption und Umsetzung von Cloud-Lösungen, insbesondere im Kontext von Machine Learning, Deep Learning und Generativer KI.
+Deine Rolle umfasst sowohl die Abstimmung von Bedarfen mit relevanten Stakeholdern als auch die Konzeption und Umsetzung von Infrastrukturen und Lösungen, stets unter Sicherstellung der hohen Qualitäts- und Verlässlichkeitsstandards der Mercedes-Benz AG.
+Du wirkst in Projekten mit, die vielfältige Aspekte der Mercedes-Benz AG Wertschöpfungskette abdecken – von internem Informationsmanagement über Kundendaten Management bis hin zur Optimierung von Werkstattprozessen. Ein besonderer aktueller Fokus liegt dabei auf der beschleunigten Integration neuer KI-Entwicklungen in alle Bereiche der Mercedes-Benz AG, zum Beispiel mit Hilfe von Multi-Agenten Systemen.
+Du arbeitest mit vielfältigen neuen Technologien und Methoden der KI und Cloud-nativen Softwareentwicklung, darunter PyTorch, TensorFlow, HuggingFace, LangGraph, und entwickelst in Python sowie JavaScript auf Azure, AWS und GCP.
+Bei der Gestaltung, Entwicklung und Implementierung zukunftsweisender Lösungen wirkst du aktiv mit und kannst deine Aufgaben zudem um Anforderungs-, Produkt- oder Projektmanagement ergänzen.
+
+Wie passt du in unser Team?
+
+Mit einem abgeschlossenen Master-Studium in Informatik, Wirtschaftsinformatik oder einer vergleichbaren Ausbildung legst du ein solides Fundament, wobei mindestens drei bis fünf Jahre praktische Berufserfahrung im AI-Umfeld erforderlich sind.
+Deine Begeisterung gilt der Überführung verlässlicher KI in relevante Anwendungen, wofür du hervorragende Programmierkenntnisse in Java, Python und SQL mitbringst und Kenntnisse in JavaScript und Frontend (React) sind dabei ein Plus.
+Du bringst ein ausgeprägtes Verständnis für DevOps- und MLOps-Vorgehen und -Technologien mit und idealerweise auch erweiterte Kenntnisse in Machine Learning, NLP, semantischer Wissensrepräsentation und Deep Learning.
+Deine Interessen in der Cloud-nativen Entwicklung umfassen Microsoft Azure, AWS oder GCP und besonders wertvoll sind dabei deine Kenntnisse mit Kubernetes (auch AKS) sowie Azure Databricks.
+Darüber hinaus verfolgst du aktiv die neuesten Entwicklungen im Deep Learning, der Anwendung von Foundation Models und Generativer KI (inklusive Prompt/Context Engineering und Model-Context Protocol) und legst dabei besonderen Wert auf Sicherheit, Zuverlässigkeit und Skalierbarkeit.
+Mit deiner ausgeprägten Teamfähigkeit bringst du dich aktiv ein, förderst den gegenseitigen Austausch und das gemeinsame Lernen und kommunizierst fließend in Deutsch und Englisch, sowohl in Wort als auch in Schrift.
+
+Benefits
+
+Mobiles Arbeiten
+
+Bei unserer Arbeits- und Führungskultur sind uns das „Wie“ und das „Wir“ wichtiger als das „Wo“. Freiheit und Eigenverantwortung werden deshalb bei uns großgeschrieben! Du möchtest lieber remote statt im Office arbeiten? Hier sind wir flexibel und finden nach gemeinsamer Absprache die optimale Lösung für dich und dein Team!
+
+Flexible Arbeitszeitgestaltung
+
+Wir bieten dir flexible Möglichkeiten zur Gestaltung deiner Arbeitszeit: Neben 30 Urlaubstagen und selbstständig planbaren Arbeitszeiten kannst du außerdem Plusstunden in Freizeit umwandeln und mit einem Arbeitszeitdepot dauerhaft erhalten. Dadurch schaffen wir harmonische Räume für die Vereinbarkeit von Privat- und Berufsleben. Zudem sind nahezu alle unsere Stellen geeignet, um in Teilzeit ausgeführt zu werden.
+
+Persönliche Entwicklungsmöglichkeiten
+
+Durch umfangreiche interne und externe Weiterbildungsangebote, Konferenzen und Trainings kannst du dein Know-How vertiefen und dich und dein Team weiter voranbringen. Mit Udemy Business bieten wir dir außerdem unbegrenzten Zugang zu mehr als 6.000 Online-Kursen – lernen wann immer und wo immer du willst.
+
+Begegnung auf Augenhöhe
+
+Bei Mercedes-Benz Tech Innovation sind wir ein Team! Unsere Zusammenarbeit basiert auf gegenseitigem Vertrauen und Respekt. Flache Hierarchien, eine wertschätzende Atmosphäre, Offenheit und Aufgeschlossenheit gehören bei uns zum Arbeitsalltag.
+
+Führungskarriere
+
+Wir fördern Talente! Mit innovativen Prozessen und vielfältigen Möglichkeiten entfalten wir dein Potenzial ganzheitlich: Nachdem dein Führungspotenzial bestätigt wurde, begleiten und fördern wir dich intensiv auf deinem Weg zur Führungskraft. Neben Möglichkeiten der klassischen Personalführung kannst du als „Lead Expert“ auch fachliche Verantwortung übernehmen.
+
+Health & Fitness
+
+Deine Gesundheit liegt uns am Herzen! Neben vergünstigten Sportangeboten für deine körperliche Fitness in ausgewählten Fitnessstudios der Region bieten wir dir mit Instahelp auch rund um die Uhr psychologische Beratungsmöglichkeiten an.
+
+Corporate Benefits
+
+Die Sicherheit eines Konzerns und die Flexibilität eines eigenständigen Unternehmens, das gilt nicht nur für deinen Arbeitsplatz, sondern auch für deine Finanzen: Du kannst von einer betrieblichen Altersvorsorge profitieren oder viele tolle Angebote in der Welt der Corporate Benefits entdecken.
+
+Ein Great Place to Work
+
+Auszeichnungen sagen mehr als Worte - Mercedes-Benz Tech Innovation hat bereits mehrmals die Auszeichnung „Great Place to Work – Beste Arbeitgeber“ verliehen bekommen. Vielleicht sind wir auch schon bald dein Great Place to Work!
+
+Now return the complete tailored LaTeX resume. Start with \documentclass. No markdown. No explanation.

@@ -1,0 +1,219 @@
+You are an expert cover letter writer specializing in tech and AI roles.
+
+Your task is to generate a tailored, compelling LaTeX cover letter for the
+provided job description using my professional experience below.
+
+STRICT OUTPUT RULES
+- Output only raw LaTeX. No markdown. No explanations.
+- Start with \documentclass and end with \end{document}.
+- Only return compilable LaTeX (balanced braces, no unescaped %, &, #, _).
+
+COVER LETTER REQUIREMENTS
+- Before writing, extract the top 5 technical keywords and top 3 soft themes
+  from the job description and build the letter around them.
+- Write 3 tight paragraphs:
+    1. Opening: why this company and role specifically, name the job title.
+    2. Body: 2-3 strongest matching experiences with measurable impact and
+       JD keywords. Reframe for relevance, not reinvention: preserve original
+       domain, core responsibilities, and technologies.
+    3. Closing: confident call to action, enthusiasm, fit.
+- Tone: professional, confident, human. Not generic. Not robotic.
+- Do not invent tools, results, or responsibilities not in my experience.
+- Keep total letter length to one page.
+
+LATEX TEMPLATE TO USE
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fontawesome}
+\usepackage{accsupp}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{background}
+
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setstretch{1.15}
+\pdfgentounicode=1
+
+\newcommand{\atsicon}[1]{%
+    \BeginAccSupp{ActualText={}}#1\EndAccSupp{}%
+}
+
+\backgroundsetup{
+  scale=1, color=black, opacity=0.15, angle=0,
+  position=current page.north west, nodeanchor=north west,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg12.jpg}}
+}
+
+\begin{document}
+
+%── HEADER ───────────────────────────────────────────────────────────────────
+\begin{center}
+    {\Huge\scshape Muhammad Haider \textcolor{gray}{Zaidi}} \\ \vspace{4pt}
+    \small
+    \atsicon{\faPhone}\ +49 1523 1698988 ~
+    \atsicon{\faEnvelope}\ \href{mailto:mhaiderzaidi21@gmail.com}{\underline{mhaiderzaidi21@gmail.com}} ~
+    \atsicon{\faLinkedin}\ \href{https://linkedin.com/in/muhammad-haider-zaidi}{\underline{linkedin.com/in/muhammad-haider-zaidi}} \\ \vspace{2pt}
+    \atsicon{\faGithub}\ \href{https://github.com/chefhaider}{\underline{github.com/chefhaider}} ~
+    \atsicon{\faHome}\ Bavaria, Germany
+\end{center}
+
+\vspace{8pt}
+
+%── DATE AND RECIPIENT ────────────────────────────────────────────────────────
+\noindent
+\textbf{[HIRING MANAGER OR TEAM NAME]} \\
+\textbf{[COMPANY NAME]} \\
+[CITY], Germany \\
+\vspace{4pt}
+\noindent \today
+
+\vspace{12pt}
+
+%── SUBJECT LINE ─────────────────────────────────────────────────────────────
+\noindent
+\textbf{Re: Application for [JOB TITLE]}
+
+\vspace{10pt}
+
+%── BODY ─────────────────────────────────────────────────────────────────────
+\noindent
+[OPENING PARAGRAPH: express genuine interest in the specific company and role.
+Reference the job title. Show you understand what they do.]
+
+\vspace{8pt}
+
+\noindent
+[BODY PARAGRAPH: highlight 2-3 strongest matching experiences with measurable
+impact and JD keywords. Be specific. Use numbers where available.]
+
+\vspace{8pt}
+
+\noindent
+[CLOSING PARAGRAPH: confident call to action. Express enthusiasm for the
+opportunity. Invite next steps.]
+
+\vspace{12pt}
+
+\noindent
+Sincerely, \\
+\vspace{20pt}
+\noindent
+\textbf{Muhammad Haider Zaidi}
+
+\end{document}
+
+MY EXPERIENCE:
+
+German National Metrology Institute (PTB):
+- Designed and evaluated deep learning models for metrological applications,
+  improving model performance and training efficiency.
+- Explored novel architectures and physics-informed hybrid loss functions to
+  improve model accuracy and stability.
+- Collaborated with PhD researchers for a publication at FLOMEKO conference.
+- Built dashboards for data visualisation and model performance monitoring.
+
+Manda GmbH:
+- Full-stack development of a website providing AI-based services using Flask,
+  HTML, CSS.
+- Built an AI chatbot application using the OpenAI API and relevant LLM
+  tools/frameworks.
+
+Folio3:
+- Improved vitiligo segmentation accuracy to 94% and increased speed by 5x
+  using AI algorithms. Deployed with Docker and FastAPI.
+- Developed a real-time tennis foul detection system with TensorRT, reducing
+  compute cost and time by 6x.
+- Managed MLOps pipelines on AWS SageMaker, addressing YOLO model data drift,
+  and maintained Kubernetes infrastructure.
+- Conducted educational sessions on machine learning and big data at
+  universities.
+- Developed POCs using YOLO, few-shot learning, and CNN for client demos.
+
+Hugging Face:
+- Co-authored the Zero-shot Image Classification technical documentation and
+  implementation page on the Hugging Face Hub.
+
+Freelance:
+- Built web scrapers and ETL pipelines for structured and unstructured data.
+- Automated data ingestion and cleaning workflows for client analytics use cases.
+
+MY PROJECTS:
+
+Saaz: AI Self-Playing Chitrali Sitar (Signal Processing, Music LLMs):
+- Collaborated to build the world's first AI-driven self-playing Chitrali Sitar,
+  combining signal processing and music generation LLMs.
+- Project featured on Coke Studio in a music video by Hassan Raheem.
+
+CAFA 6: Protein Function Prediction (Kaggle Competition):
+- Architected a weighted-probability ensemble integrating DPFunc and DeepGOPlus,
+  using AlphaFold for feature extraction and taxonomic bias mitigation.
+- Increased model accuracy by 4% through custom feature engineering across MF,
+  CC, and BP namespaces.
+
+Hugging Face Open-Source Contributor:
+- Co-authored Zero-shot Image Classification documentation and implementation
+  page.
+
+JOB I AM APPLYING FOR (VERY IMPORTANT):Company: Alignerr
+Job Title: Data Scientist (Masters)
+Job Description:
+Data Scientist (Masters) — AI Data Trainer
+
+About The Role
+
+What if your hard-earned expertise in machine learning, statistical inference, and data engineering could directly shape how the world's most advanced AI systems think and reason?
+
+We're looking for data scientists with graduate-level training to help stress-test and improve cutting-edge AI models — designing challenges that expose their limits, authoring rigorous solutions that set the standard, and auditing AI-generated code for correctness and efficiency.
+
+This is a fully remote, flexible contract role. No prior AI industry experience needed — just deep, demonstrable expertise in data science and a sharp analytical mind.
+
+Organization: Alignerr
+Type: Hourly Contract
+Location: Remote
+Commitment: 10–40 hours/week
+
+What You'll Do
+
+Design Advanced Challenges — Craft complex, domain-spanning data science problems across areas like hyperparameter optimization, Bayesian inference, cross-validation strategies, and dimensionality reduction
+Author Ground-Truth Solutions — Develop rigorous, step-by-step technical solutions — including Python/R scripts, SQL queries, and mathematical derivations — that serve as definitive reference answers
+Audit AI-Generated Code — Evaluate outputs from libraries like Scikit-Learn, PyTorch, and TensorFlow for technical accuracy, efficiency, and correctness
+Sharpen AI Reasoning — Identify logical failures in AI reasoning — data leakage, overfitting, improper handling of imbalanced datasets — and provide structured feedback that meaningfully improves model performance
+
+Who You Are
+
+Currently pursuing or holding a Master's or PhD in Data Science, Statistics, Computer Science, or a quantitative field with a heavy emphasis on data analysis
+Strong foundational knowledge across core areas such as supervised/unsupervised learning, deep learning, big data technologies (Spark/Hadoop), or NLP
+Able to communicate complex algorithmic concepts and statistical results clearly and precisely in writing
+Highly detail-oriented — you catch errors in code syntax, mathematical notation, and statistical conclusions before anyone else does
+No prior AI or data annotation experience required
+
+Nice to Have
+
+Prior experience with data annotation, data quality assurance, or AI evaluation systems
+Familiarity with production-level data science workflows — MLOps, CI/CD for models, model monitoring
+Exposure to LLM evaluation or prompt engineering workflows
+
+Why Join Us
+
+Work directly with industry-leading AI research labs on cutting-edge model development
+Fully remote and async — work on your own schedule, from anywhere in the world
+High contractor autonomy with meaningful, intellectually stimulating work
+Direct engagement with state-of-the-art large language models
+Potential for ongoing contract renewals as new projects launch
+
+Now return the complete tailored LaTeX cover letter. Start with \documentclass. No markdown. No explanation.

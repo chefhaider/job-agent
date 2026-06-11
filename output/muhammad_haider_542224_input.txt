@@ -1,0 +1,343 @@
+You are an ATS resume expert.
+
+Your task is to take my professional summary and tailor the provided LaTeX resume template to the specific provided Job Description provided
+
+STRICT OUTPUT RULES (VERY IMPORTANT)
+Copy the entire LaTeX template verbatim and fill only the text inside existing placeholders.
+Do not alter any package name, package option, command, environment, bullet count, or section structure.
+Only return compilable LaTeX (balanced braces, no special character errors).
+
+TAILORING REQUIREMENTS
+Tailor the content to Optimize for maximum interview probability in accordance with the provided
+Extract and use keywords directly from the job description.
+Prioritize measurable impact and strong action verbs.
+Make bullets concise, ATS-friendly, and keyword-dense.
+Update Technical Skills to match job priorities.
+
+MY LATEX TEMPLATE
+
+\documentclass[letterpaper]{article}
+\usepackage[12pt]{extsizes} % Font size 12pt
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{accsupp} % ATS-friendly icons
+\setlength{\multicolsep}{-3.0pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{10pt plus 4pt minus 2pt}
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}] % commented out horizontal line
+
+\pdfgentounicode=1
+
+\newcommand{\atsicon}[1]{%
+    \BeginAccSupp{ActualText={}}#1\EndAccSupp{}%
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\  % Company bold
+    \textit{\small #3} & \textit{\small #4} \\ % Role italic
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{setspace}
+\setstretch{1.05}
+
+\usepackage{graphicx}
+\usepackage{background}
+
+\backgroundsetup{
+  scale=1, color=black, opacity=0.15, angle=0,
+  position=current page.north west, nodeanchor=north west,
+  contents={\includegraphics[width=\paperwidth,height=\paperheight]{bg12.jpg}}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\scshape Muhammad Haider \textcolor{gray}{Zaidi}} \\ \vspace{4pt}
+    
+    \small 
+    \atsicon{\faPhone}\ +49 1523 1698988 ~ 
+    \atsicon{\faEnvelope}\ \href{mailto:mhaiderzaidi21@gmail.com}{\underline{mhaiderzaidi21@gmail.com}} ~ 
+    \atsicon{\faLinkedin}\ \href{https://linkedin.com/in/muhammad-haider-zaidi}{\underline{linkedin.com/in/muhammad-haider-zaidi}} \\ \vspace{2pt}
+    \atsicon{\faGithub}\ \href{https://github.com/chefhaider}{\underline{github.com/chefhaider}} ~
+    \atsicon{\faHome}\ Bavaria, Germany ~
+    \atsicon{\faBirthdayCake}\ 21.06.2000
+\end{center}
+
+%TECHNICAL SKILLS
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Programming}{: Python, C++, item1, item2...} \\
+    \textbf{Tools/Frameworks}{: item1, item2...} \\
+    \textbf{Competence}{: Machine Learning, MLOps, item1, item2... }
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+%EXPERIENCE
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {German National Metrology Institute (PTB)}{March 2024 -- Present}
+  {Student Assistant Researcher}{Berlin, DE}
+\resumeItemListStart
+  \resumeItem{add content}
+  \resumeItem{add content}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Folio3}{March 2022 -- Nov 2023}
+  {Machine Learning Engineer}{California, US (remote)}
+\resumeItemListStart
+  \resumeItem{add content}
+  \resumeItem{add content}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Manda GmbH}{March 2024 - June 2024}
+  {Werkstudent Python Developer}{Nürnberg, DE}
+  \resumeItemListStart
+    \resumeItem{add content}
+  \resumeItemListEnd
+
+
+\resumeSubheading
+  {Freelance}{July 2020 -- March 2022}
+  {Data Engineer}{Remote}
+\resumeItemListStart  
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%PROJECTS
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {CAFA 6: Protein Function Prediction}{2022}
+  {Deep Learning Competition}{}
+\resumeItemListStart
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Razanlytics: Real-time Bitcoin Price Forecasting}{2022}
+  {Thesis Project}{}
+\resumeItemListStart
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Saaz: AI Self-Playing Chitrali Sitar}{2023}
+  {Signal Processing, Music Generation}{}
+\resumeItemListStart
+  \resumeItem{add content}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Hugging Face}{Open-Source} 
+  {Contributor}{}
+\resumeItemListStart  
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%EDUCATION
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Friedrich Alexander Universität}{Present}
+  {Master of Science in Artificial Intelligence} {Erlangen, DE}
+\resumeItemListStart
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubheading
+  {National University of Computer and Emerging Sciences}{Aug 2018 -- June 2022}
+  {Bachelor of Science in Computer Science}{Karachi, PK}
+\resumeItemListStart
+\resumeItem{Dean's List of Honor}
+  \resumeItem{add content}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%CERTIFICATIONS
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{PyTorch}: Deep Neural Networks with PyTorch \textbar{} \textbf{Coursera}: TensorFlow Developer Certificate \textbar{} \textbf{Databricks}: Lakehouse Fundamentals \textbar{} \textbf{Datacamp}: Computer Vision in Python
+    }}
+\end{itemize}
+
+\end{document}
+
+
+
+professional summary below
+
+MY EXPERIENCE:
+
+German National Metrology Institute (PTB):
+- Designed and evaluated deep learning models for metrological applications, improving
+  model performance and training efficiency.
+- Explored novel architectures and physics-informed hybrid loss functions to improve
+  model accuracy and stability.
+- Collaborated with PhD researchers for a publication at FLOMEKO conference.
+- Built dashboards for data visualisation and model performance monitoring.
+
+Manda GmbH:
+- Full-stack development of a website providing AI-based services using Flask, HTML, CSS.
+- Built an AI chatbot application using the OpenAI API and relevant LLM tools/frameworks.
+
+Folio3:
+- Improved vitiligo segmentation accuracy to 94% and increased speed by 5x using AI
+  algorithms. Deployed with Docker and FastAPI.
+- Developed a real-time tennis foul detection system with TensorRT, reducing compute
+  cost and time by 6x.
+- Managed MLOps pipelines on AWS SageMaker, addressing YOLO model data drift, and
+  maintained Kubernetes infrastructure.
+- Conducted educational sessions on machine learning and big data at universities.
+- Developed POCs using YOLO, few-shot learning, and CNN for client demos.
+
+Hugging Face:
+- Co-authored the Zero-shot Image Classification technical documentation and
+  implementation page on the Hugging Face Hub.
+
+Freelance:
+- Built web scrapers and ETL pipelines for structured and unstructured data.
+- Automated data ingestion and cleaning workflows for client analytics use cases.
+
+Systems Ltd. - Visionet:
+- Gained hands-on experience in Hadoop ecosystem: Hive, Sqoop, NiFi, PySpark, Airflow.
+- Authored a learning blog on data engineering concepts.
+
+MY PROJECTS:
+
+Saaz: AI Self-Playing Chitrali Sitar (Signal Processing, Music LLMs):
+- Collaborated to build the world's first AI-driven self-playing Chitrali Sitar,
+  combining signal processing and music generation LLMs.
+- Project featured on Coke Studio in a music video by Hassan Raheem.
+
+CAFA 6: Protein Function Prediction (Kaggle Competition):
+- Architected a weighted-probability ensemble integrating DPFunc and DeepGOPlus,
+  using AlphaFold for feature extraction and taxonomic bias mitigation.
+- Increased model accuracy by 4% through custom feature engineering across MF, CC,
+  and BP namespaces.
+
+Hugging Face Open-Source Contributor:
+- Co-authored Zero-shot Image Classification documentation and implementation page.
+
+
+
+JOB IM APPLYING FOR(VERY IMPORTANT):Company: Sunhat
+Job Title: AI Software Engineer (m/w/d)
+Job Description:
+Deine Rolle
+
+Das Sammeln und Verifizieren von Nachweisen für Compliance oder Nachhaltigkeitsanforderungen ist für Unternehmen heute eine gewaltige operative Hürde. Das Nachweis-Management ist oft fragmentiert und manuell.
+
+Sunhat schließt diese "Proof Gap". Wir sind die Collaborative Proof Platform, die verstreute Daten in eine zentrale, verifizierte Proof Library überführt.
+
+Als AI Software Engineer (m/w/d) arbeitest du an innovativen Projekten in den Bereichen Textgenerierung, Textklassifizierung, semantische Suche und Agentic AI Workflows.
+
+Zu deinen Aufgaben gehören die Bewertung von LLMs, deren Integration in unsere Plattform, der Orchestrierung von AI Agents und die Optimierung der Leistung im Hinblick auf Skalierbarkeit und Effizienz. Du arbeitest eng mit Software Engineers und Sustainability Experts zusammen und nutzt dein Fachwissen, um maschinelles Lernen und KI-gestützte Funktionen nahtlos in unsere Softwarelösung zu integrieren.
+
+Deine Aufgaben
+
+Treibe generative und agentic KI-Initiativen von der Ideenfindung bis zur Bereitstellung (Deployment) voran und stelle sicher, dass die Lösungen robust, skalierbar und nahtlos in unsere Plattform integriert sind.
+Arbeite an Aufgaben mithilfe generativer KI und der Verarbeitung natürlicher Sprache wie z.B. Texterzeugung mit agentic RAG, semantischer Ähnlichkeit und Klassifizierung, wobei du aktuelle KI-Modelle nutzt.
+Arbeite eng mit Software Engineers zusammen, um GenAI-Modelle und Agentic Workflows direkt in unsere Plattform zu integrieren, wobei du dich auf Effizienz, Sicherheit und Performance in großem Maßstab konzentrierst.
+Nutze moderne LLMOps-Praktiken und TDD (Test-Driven Development), um zuverlässige, wartbare Pipelines zu gewährleisten und sicherzustellen, dass Modelle schnell iteriert und bereitgestellt werden können.
+Arbeite mit Produktmanagement, Nachhaltigkeitsexperten und dem Engineering-Team zusammen, um Geschäftsanforderungen in leistungsstarke, KI-gesteuerte Funktionen zu übersetzen, die die Fähigkeiten und die Benutzerfreundlichkeit unseres Produkts verbessern.
+
+Dein Profil
+
+Tiefe Expertise in GenAI: Du bringst mehrjährige, praktische Erfahrung in angewandter Nutzung von Agentic AI und generativen KI-Modellen (wie Gemini, Mistral, Claude Llama oder ähnlichen) mit, insbesondere für textbasierte Aufgaben. Erfahrung mit Vertex AI ist ein Pluspunkt.
+Programmier- und Modellintegrationsfähigkeiten: Du bist Experte für TypeScript und hast Erfahrung in der Integration von Sprachmodellen in Produktionssysteme, wobei der Fokus auf Zuverlässigkeit, Skalierbarkeit und Sicherheit liegt. Expertise in Python ist ein Plus, aber keine zwingende Voraussetzung.
+Full-Stack-Entwicklungsfähigkeiten: Du bist erfahren im Aufbau von serverseitigen Komponenten in TypeScript oder Python. Du verstehst das gesamte Spektrum der Client-Server-Architektur. Idealerweise hast du bereits mit Frameworks wie Angular und Nest.js gearbeitet.
+LLMOps und CI/CD-Erfahrung: Du hast Kenntnisse in CI/CD-Praktiken, idealerweise mit GitHub, um die Modellentwicklung und -bereitstellung zu optimieren und zu automatisieren.
+SaaS-Erfahrung: Du hast KI erfolgreich in B2B-SaaS-Anwendungen implementiert.
+Datensicherheit und Performance-Optimierung: Du hast ein tiefes Verständnis für Sicherheit, Datenschutz und Performance-Tuning, spezifisch für Machine Learning und GenAI in Cloud-Umgebungen.
+GenAI- und Agents-Expertise: Du bist versiert in der Anwendung von GenAI und AI Agents zur Verbesserung von Benutzererfahrungen und besitzt ein gutes Verständnis für fortgeschrittene Texterzeugung, Zusammenfassung (Summarization) und andere generative Aufgaben, die für die Verarbeitung von Nachhaltigkeitsdaten relevant sind.
+Kollaborativ und Qualitätsorientiert: Du schätzt die Zusammenarbeit, beteiligst dich am Pair Programming und priorisierst qualitativ hochwertige Arbeit durch Peer Code Reviews.
+Initiative und Anpassungsfähigkeit: Du übernimmst die Führung bei neuen Projekten, treibst sie bis zur Produktion und lernst kontinuierlich aus den Ergebnissen und verbesserst dich stetig.
+Fließendes Englisch: Du beherrschst Englisch fließend, um effektiv mit unserem Team und Stakeholdern kommunizieren zu können.
+
+Benefits
+
+Flexibles und remote Arbeiten: Du hast die Möglichkeit, vollständig remote innerhalb Deutschlands zu arbeiten. Alternativ stehen dir unsere Offices in Köln, Berlin und Hamburg offen.
+Wettbewerbsfähiges Gehalt & Unternehmensanteile (Equity): Wir bieten dir ein konkurrenzfähiges Gehaltspaket und Optionen für Unternehmensanteile.
+Familienfreundliches Umfeld: Wir bieten hohe Flexibilität, um deine Work-Life-Balance zu unterstützen.
+Top Equipment & Tools: Von Macbook bis Software – du bekommst alles, was du brauchst, um richtig durchzustarten.
+Kontinuierliches Lernen: Du profitierst von einem Weiterbildungsbudget für Kurse, Konferenzen und mehr.
+Feel Good Budget: 50 € steuerfreier Sachbezug, den du flexibel für Shopping-Gutscheine oder eine Mitgliedschaft beim Urban Sports Club nutzen kannst.
+
+Bereit, Großes zu bewirken?
+
+Interessiert an der Rolle, aber nicht sicher, ob du alle Kriterien zu 100% erfüllst? Bewirb dich trotzdem. Wir suchen keine perfekten Lebensläufe, sondern Persönlichkeiten mit Potential und Begeisterung für unsere Mission.
+
+Als Arbeitgeber, der Chancengleichheit fördert, ermutigen wir alle Personen unabhängig ihres Hintergrunds, sich zu bewerben.
+
+Über uns
+
+Sunhat wurde gegründet, um die Art und Weise zu verändern, wie Unternehmen Nachhaltigkeitsdaten mit internen Teams und externen Stakeholdern austauschen.
+
+Wir sind überzeugt, dass Technologie eine Schlüsselrolle dabei spielt, die wachsenden ESG-Anforderungen mit belastbarem, prüfungsfähigem Nachweis zu erfüllen. Indem Sunhat den gesamten Prozess vereinfacht – von der Anforderungserfassung über die Aufbereitung bis hin zur kontinuierlichen Pflege der Daten – befähigen wir Nachhaltigkeitsteams, effizienter zu arbeiten, Compliance sicherzustellen und das Vertrauen der Stakeholder durch verlässliche, nachvollziehbare Informationen zu stärken.
+
+Now return the complete tailored LaTeX resume. Start with \documentclass. No markdown. No explanation.
