@@ -27,17 +27,17 @@ fi
 
 
 # ── Randomized Execution Window (00:00 - 00:30) ──────────────────────────────
-CURRENT_HOUR=$(date +%H)
-if [[ "$CURRENT_HOUR" == "00" ]]; then
-    RANDOM_DELAY=$(( RANDOM % 1801 ))  # 0 to 1800 seconds
-    MIN_DELAY=$(( RANDOM_DELAY / 60 ))
-    SEC_DELAY=$(( RANDOM_DELAY % 60 ))
-    log "⏱️  Random delay: ${MIN_DELAY}m ${SEC_DELAY}s"
-    log "⏳ Sleeping until pipeline starts..."
-    sleep "$RANDOM_DELAY"
-else
-    log "ℹ️  Triggered outside midnight window (hour: $CURRENT_HOUR). Running immediately."
-fi
+#CURRENT_HOUR=$(date +%H)
+#if [[ "$CURRENT_HOUR" == "00" ]]; then
+#    RANDOM_DELAY=$(( RANDOM % 1801 ))  # 0 to 1800 seconds
+#    MIN_DELAY=$(( RANDOM_DELAY / 60 ))
+#    SEC_DELAY=$(( RANDOM_DELAY % 60 ))
+#    log "⏱️  Random delay: ${MIN_DELAY}m ${SEC_DELAY}s"
+#    log "⏳ Sleeping until pipeline starts..."
+#    sleep "$RANDOM_DELAY"
+#else
+#    log "ℹ️  Triggered outside midnight window (hour: $CURRENT_HOUR). Running immediately."
+#fi
 
 log "🚀 Pipeline started at $(date '+%H:%M:%S')"
 
