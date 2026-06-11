@@ -9,4 +9,4 @@ pipeline.log
 output/*
 !output/.gitkeep
 
-temp/
+temp/*
