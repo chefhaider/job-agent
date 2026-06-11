@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+pipeline.log
+
+# Secrets — never commit
+.env
+
+# Keep the output/ folder in git, but ignore everything generated inside it
+output/*
+!output/.gitkeep
+
+temp/
