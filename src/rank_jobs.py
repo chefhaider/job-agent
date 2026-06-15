@@ -1,17 +1,19 @@
 import os
 import json
 import pandas as pd
-import google.generativeai as genai
-from groq import Groq
+from openai import OpenAI
 
 # ── API keys / models ─────────────────────────────────────────────────────────
 
-GEMINI_KEY = os.environ.get("GOOGLE_API_KEY")
-GROQ_KEY = os.environ.get("GROQ_API_KEY")
-SESSION_FILE = os.environ.get("GEMINI_SESSION_FILE", "/tmp/gemini_chat_session.json")
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 
-GEMINI_MODELS = ["gemini-2.5-flash", "gemini-3.1-flash-lite"]
-GROQ_MODEL = "llama-3.3-70b-versatile"
+# Same model set as resume_builder.py (GitHub Models, high → low tier fallback)
+GITHUB_MODELS = [
+    "gpt-4o",                    # High Tier: 10 RPM / 50 RPD
+    "phi-4-reasoning",           # High Tier: 10 RPM / 50 RPD
+    "gpt-4o-mini",               # Low Tier: 15 RPM / 150 RPD
+    "phi-4-mini-instruct"        # Low Tier: 15 RPM / 150 RPD
+]
 
 # ── Files ─────────────────────────────────────────────────────────────────────
 
@@ -66,19 +68,16 @@ Jobs:
 """.strip()
 
 
-# ── Model callers ─────────────────────────────────────────────────────────────
+# ── Model caller (GitHub Models via the OpenAI SDK) ───────────────────────────
 
-def call_gemini(prompt: str, model_name: str) -> str:
-    genai.configure(api_key=GEMINI_KEY)
-    model = genai.GenerativeModel(model_name)
-    response = model.generate_content(prompt)
-    return response.text
-
-
-def call_groq(prompt: str) -> str:
-    client = Groq(api_key=GROQ_KEY)
+def call_github_model(prompt: str, model_name: str) -> str:
+    # Point to GitHub's Azure-hosted OpenAI-compatible marketplace endpoint
+    client = OpenAI(
+        base_url="https://models.inference.ai.azure.com",
+        api_key=GITHUB_TOKEN,
+    )
     response = client.chat.completions.create(
-        model=GROQ_MODEL,
+        model=model_name,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
     )
@@ -108,24 +107,22 @@ def parse_json_response(text: str) -> dict:
 
 
 def get_ordered_row_ids(prompt: str):
-    # Try Gemini models first
-    for model_name in GEMINI_MODELS:
-        try:
-            print(f"Trying Gemini: {model_name}")
-            raw = call_gemini(prompt, model_name)
-            data = parse_json_response(raw)
-            return data["ordered_row_ids"], f"gemini/{model_name}"
-        except Exception as e:
-            print(f"Failed Gemini {model_name}: {e}")
+    if not GITHUB_TOKEN:
+        raise RuntimeError("❌ GITHUB_TOKEN environment variable is missing.")
 
-    # Fallback to Groq
-    try:
-        print(f"Trying Groq: {GROQ_MODEL}")
-        raw = call_groq(prompt)
-        data = parse_json_response(raw)
-        return data["ordered_row_ids"], f"groq/{GROQ_MODEL}"
-    except Exception as e:
-        raise RuntimeError(f"All models failed. Last error: {e}")
+    # Cascade through the GitHub model list, high → low tier
+    last_error = None
+    for model_name in GITHUB_MODELS:
+        try:
+            print(f"Trying GitHub Model: {model_name}")
+            raw = call_github_model(prompt, model_name)
+            data = parse_json_response(raw)
+            return data["ordered_row_ids"], f"github/{model_name}"
+        except Exception as e:
+            print(f"Failed {model_name}: {e}")
+            last_error = e
+
+    raise RuntimeError(f"All models failed. Last error: {last_error}")
 
 
 # ── Sorting ───────────────────────────────────────────────────────────────────
