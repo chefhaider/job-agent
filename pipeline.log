@@ -1,5 +1,960 @@
-[2026-06-11 12:37:49] 📧 Step 5: Sending email report...
-📝 Building email for 20 jobs...
-📤 Sending email to mhaiderzaidi21@gmail.com...
-✅ Email successfully sent to mhaiderzaidi21@gmail.com
-[2026-06-11 12:37:52] ✅ Pipeline completed successfully
+[2026-06-15 20:25:02] 🚀 Pipeline started at 20:25:02
+[2026-06-15 20:25:02] 📥 Step 1: Scraping LinkedIn jobs...
+============================================================
+  🔍 LinkedIn Job Scraper — Multi-URL
+============================================================
+  ✅ Chrome: /usr/bin/google-chrome (Google Chrome 147.0.7727.137)
+
+  URLs file  : target_urls.csv
+  Pages/URL  : 2
+  Headless   : True
+  Delay      : 5.0s
+  Output     : jobs.csv
+============================================================
+
+  📋 Loaded 2 target URLs from target_urls.csv
+     1. Machine Learning Germn
+     2. Work Student ML
+  ✅ Chrome: /usr/bin/google-chrome (Google Chrome 147.0.7727.137)
+
+  🚀 Launching Chrome (headless=True)...
+  ✅ Browser ready.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🎯 Target 1/2: Machine Learning Germn
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 Opening: Machine Learning Germn
+   URL: https://www.linkedin.com/jobs/search/?currentJobId=4414125895&distance=25.0&f_TP...
+
+  📄 Page 1/2 — Machine Learning Germn
+    📜 Scrolling to load jobs...
+    🔍 Extracting jobs...
+    Selector hit: 'div.job-search-card'  →  59 cards
+    ✅ Found 59 jobs
+    📊 Jobs for 'Machine Learning Germn': 59
+
+  ✅ Machine Learning Germn: 59 jobs extracted
+
+  ⏳ Waiting 9.3s before next search...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🎯 Target 2/2: Work Student ML
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 Opening: Work Student ML
+   URL: https://www.linkedin.com/jobs/search/?currentJobId=4410396663&distance=25.0&f_TP...
+
+  📄 Page 1/2 — Work Student ML
+    📜 Scrolling to load jobs...
+    🔍 Extracting jobs...
+    Selector hit: 'div.job-search-card'  →  60 cards
+    ✅ Found 60 jobs
+    📊 Jobs for 'Work Student ML': 60
+
+  ✅ Work Student ML: 60 jobs extracted
+
+🔒 Browser closed.
+
+=================================================================
+  📊 TOTAL EXTRACTED: 119 JOBS
+=================================================================
+
+  🔍 Machine Learning Germn (59 jobs)
+  ───────────────────────────────────────────────────────
+      1. AI Engineer (m/w/d)
+         Synergeticon GmbH
+         https://de.linkedin.com/jobs/view/ai-engineer-m-w-d-at-synergeticon-gmbh-4425755668
+      2. Graduate AI software engineer
+         Bending Spoons
+         https://de.linkedin.com/jobs/view/graduate-ai-software-engineer-at-bending-spoons-4427436716
+      3. Data Scientist
+         AVIV Group
+         https://de.linkedin.com/jobs/view/data-scientist-at-aviv-group-4425787001
+      4. Founding Data Scientist
+         Cubiq Recruitment
+         https://de.linkedin.com/jobs/view/founding-data-scientist-at-cubiq-recruitment-4411580729
+      5. Data Scientist
+         Haystack
+         https://de.linkedin.com/jobs/view/data-scientist-at-haystack-4425753106
+      6. Applied AI Developer / Data Engineer (m/f/d)
+         Electronic components by Würth Elektronik
+         https://de.linkedin.com/jobs/view/applied-ai-developer-data-engineer-m-f-d-at-electronic-components-by-w%C3%BCrth-elektronik-4425777084
+      7. Data Scientist (Financial Trading - Time-Series)
+         MAM Gruppe
+         https://de.linkedin.com/jobs/view/data-scientist-financial-trading-time-series-at-mam-gruppe-4403363447
+      8. Robotics Software Engineer (m/w/d)
+         Aitonomi Group
+         https://de.linkedin.com/jobs/view/robotics-software-engineer-m-w-d-at-aitonomi-group-4428872966
+      9. Lead Machine Learning Engineer
+         Wenham Carter
+         https://de.linkedin.com/jobs/view/lead-machine-learning-engineer-at-wenham-carter-4428836544
+     10. (Senior) Data Scientist - Credit Risk (m/w/d)
+         Octopus Energy
+         https://de.linkedin.com/jobs/view/senior-data-scientist-credit-risk-m-w-d-at-octopus-energy-4428851266
+     11. Data Scientist
+         The University of Bonn
+         https://de.linkedin.com/jobs/view/data-scientist-at-the-university-of-bonn-4425782049
+     12. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664422
+     13. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679284
+     14. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428677298
+     15. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428669290
+     16. Data Scientist Finance (m/f/d)
+         Canon Production Printing
+         https://de.linkedin.com/jobs/view/data-scientist-finance-m-f-d-at-canon-production-printing-4428878933
+     17. Software Engineer (AI Training) — Remote Contract
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-%E2%80%94-remote-contract-at-alignerr-4428667345
+     18. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428667353
+     19. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428673301
+     20. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428680246
+     21. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664435
+     22. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428675281
+     23. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679263
+     24. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428678268
+     25. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679281
+     26. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428666339
+     27. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664454
+     28. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428665348
+     29. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428684164
+     30. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428677282
+     31. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679264
+     32. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428667332
+     33. Senior ML Engineer (Token Factory)
+         Jobgether
+         https://de.linkedin.com/jobs/view/senior-ml-engineer-token-factory-at-jobgether-4427465698
+     34. Graduate software engineer
+         Bending Spoons
+         https://de.linkedin.com/jobs/view/graduate-software-engineer-at-bending-spoons-4427448303
+     35. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428668369
+     36. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428678256
+     37. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428662453
+     38. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428681221
+     39. Senior Data Scientist, Retail Media (m/f/d)
+         Redcare Pharmacy
+         https://de.linkedin.com/jobs/view/senior-data-scientist-retail-media-m-f-d-at-redcare-pharmacy-4425777274
+     40. Software Engineer (AI Training)
+         Alignerr
+         https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428663444
+     41. Data Scientist / AI Consultant (m/w/d)
+         IBM
+         https://de.linkedin.com/jobs/view/data-scientist-ai-consultant-m-w-d-at-ibm-4426406296
+     42. Data Scientist / AI Consultant (m/w/d)
+         IBM
+         https://de.linkedin.com/jobs/view/data-scientist-ai-consultant-m-w-d-at-ibm-4426404342
+     43. Research Software Engineer - User Configurable AI-Ready Datasets
+         European Centre for Medium-Range Weather Forecasts - ECMWF
+         https://de.linkedin.com/jobs/view/research-software-engineer-user-configurable-ai-ready-datasets-at-european-centre-for-medium-range-weather-forecasts-ecmwf-4428676880
+     44. Junior Software Engineer
+         THRYVE
+         https://de.linkedin.com/jobs/view/junior-software-engineer-at-thryve-4428818397
+     45. Junior Software Engineer
+         THRYVE
+         https://de.linkedin.com/jobs/view/junior-software-engineer-at-thryve-4428870513
+     46. Data Engineer (m/w/d)
+         FindYou Consulting GmbH
+         https://de.linkedin.com/jobs/view/data-engineer-m-w-d-at-findyou-consulting-gmbh-4426406315
+     47. Full-Stack ML Engineer - Data Products (m/f/d)
+         Statista
+         https://de.linkedin.com/jobs/view/full-stack-ml-engineer-data-products-m-f-d-at-statista-4404432746
+     48. Senior DataOps Engineer / Software Engineer
+         Zero to One Search | Recruitment Agency
+         https://de.linkedin.com/jobs/view/senior-dataops-engineer-software-engineer-at-zero-to-one-search-recruitment-agency-4425772297
+     49. Software Engineer
+         THRYVE
+         https://de.linkedin.com/jobs/view/software-engineer-at-thryve-4428875469
+     50. Senior Software Engineer, Applied AI
+         NVIDIA AI
+         https://de.linkedin.com/jobs/view/senior-software-engineer-applied-ai-at-nvidia-ai-4425765317
+     51. Senior Software Engineer – KI Agenten (all people)
+         ExB Group
+         https://de.linkedin.com/jobs/view/senior-software-engineer-%E2%80%93-ki-agenten-all-people-at-exb-group-4425755820
+     52. (Junior) Finance Data Scientist (w/m/d)
+         Siemens
+         https://de.linkedin.com/jobs/view/junior-finance-data-scientist-w-m-d-at-siemens-4427724655
+     53. Data Scientist / AI Consultant (m/w/d)
+         IBM
+         https://de.linkedin.com/jobs/view/data-scientist-ai-consultant-m-w-d-at-ibm-4426408262
+     54. Abschlussarbeit Machine Learning (all genders)
+         MTU Aero Engines
+         https://de.linkedin.com/jobs/view/abschlussarbeit-machine-learning-all-genders-at-mtu-aero-engines-4425461782
+     55. Software Engineer / Architect / Designer
+         ReduceCO2Now
+         https://de.linkedin.com/jobs/view/software-engineer-architect-designer-at-reduceco2now-4428811481
+     56. Data Engineer
+         Lorien
+         https://de.linkedin.com/jobs/view/data-engineer-at-lorien-4427908484
+     57. Senior AI Software Engineer (all genders) in Berlin
+         Instaffo
+         https://de.linkedin.com/jobs/view/senior-ai-software-engineer-all-genders-in-berlin-at-instaffo-4368830733
+     58. Software Engineer - Data & AI Platform - STACKIT (m/w/d)
+         Schwarz Digits
+         https://de.linkedin.com/jobs/view/software-engineer-data-ai-platform-stackit-m-w-d-at-schwarz-digits-4427450630
+     59. Cofounder of a climatech startup - AI/ML Expert - Full Stack Developer/Data Scientist
+         Carbon13
+         https://de.linkedin.com/jobs/view/cofounder-of-a-climatech-startup-ai-ml-expert-full-stack-developer-data-scientist-at-carbon13-4416629643
+
+  🔍 Work Student ML (60 jobs)
+  ───────────────────────────────────────────────────────
+      1. Working Student (f/m/d) Commercial Partnerships
+         Ratepay
+         https://de.linkedin.com/jobs/view/working-student-f-m-d-commercial-partnerships-at-ratepay-4426404221
+      2. Working Student Marketing (m/f/x)
+         CRX Markets AG
+         https://de.linkedin.com/jobs/view/working-student-marketing-m-f-x-at-crx-markets-ag-4426400185
+      3. Working Student Marketing - Internal Communications (f/m/d)
+         Inverto | A BCG Company
+         https://de.linkedin.com/jobs/view/working-student-marketing-internal-communications-f-m-d-at-inverto-a-bcg-company-4369531462
+      4. HR Reporting & Analytics Intern
+         DHL Supply Chain
+         https://de.linkedin.com/jobs/view/hr-reporting-analytics-intern-at-dhl-supply-chain-4427036001
+      5. Working Student - Radar Coexistence & Interference Analysis
+         Xneural
+         https://de.linkedin.com/jobs/view/working-student-radar-coexistence-interference-analysis-at-xneural-4428880805
+      6. Werkstudent (m/w/d) B2B Marketing
+         Mitel
+         https://de.linkedin.com/jobs/view/werkstudent-m-w-d-b2b-marketing-at-mitel-4425775232
+      7. Working Student/ Werkstudent (m/f/d) - Bipolar Transistors
+         Nexperia
+         https://de.linkedin.com/jobs/view/working-student-werkstudent-m-f-d-bipolar-transistors-at-nexperia-4425787187
+      8. Engineering Operations Intern
+         Haystack
+         https://de.linkedin.com/jobs/view/engineering-operations-intern-at-haystack-4423147988
+      9. Internship Aftermarket Quality
+         Geely Technology Europe
+         https://de.linkedin.com/jobs/view/internship-aftermarket-quality-at-geely-technology-europe-4428818102
+     10. Working Student (f/m/d) Sustainable by Design / Customer Insights & Value
+         Siemens Healthineers
+         https://de.linkedin.com/jobs/view/working-student-f-m-d-sustainable-by-design-customer-insights-value-at-siemens-healthineers-4425793531
+     11. Recruitment Intern
+         JD.COM
+         https://de.linkedin.com/jobs/view/recruitment-intern-at-jd-com-4427470758
+     12. Working Student Business Controlling – Solar & Batteries (f/m/d)
+         Vattenfall
+         https://de.linkedin.com/jobs/view/working-student-business-controlling-%E2%80%93-solar-batteries-f-m-d-at-vattenfall-4427715714
+     13. Student position: Construction of an eddy current test system
+         German Aerospace Center (DLR)
+         https://de.linkedin.com/jobs/view/student-position-construction-of-an-eddy-current-test-system-at-german-aerospace-center-dlr-4428691807
+     14. Working Student People & Organisation (Learning & Development) (all genders)
+         Tradebyte
+         https://de.linkedin.com/jobs/view/working-student-people-organisation-learning-development-all-genders-at-tradebyte-4410018480
+     15. Werkstudent:in IT Support & Data Governance (m/w/d)
+         Implify
+         https://de.linkedin.com/jobs/view/werkstudent-in-it-support-data-governance-m-w-d-at-implify-4426413295
+     16. Operations Intern
+         TractEasy
+         https://de.linkedin.com/jobs/view/operations-intern-at-tracteasy-4425797890
+     17. Student (m/f/d) - Computer Science, Mathematics, Data Science, Physics, or similar
+         German Aerospace Center (DLR)
+         https://de.linkedin.com/jobs/view/student-m-f-d-computer-science-mathematics-data-science-physics-or-similar-at-german-aerospace-center-dlr-4428863063
+     18. QUANTITATIVE CONSULTANT FRANKFURT/DÜSSELDORF
+         Management Solutions
+         https://de.linkedin.com/jobs/view/quantitative-consultant-frankfurt-d%C3%BCsseldorf-at-management-solutions-4426413051
+     19. Working Student - Robotics Software Application (m/f/d)
+         Agile Robots SE
+         https://de.linkedin.com/jobs/view/working-student-robotics-software-application-m-f-d-at-agile-robots-se-4425788956
+     20. Working Student (m/f/d) AI & Automation Engineer
+         BorgWarner
+         https://de.linkedin.com/jobs/view/working-student-m-f-d-ai-automation-engineer-at-borgwarner-4427701120
+     21. Finance and Bookkeeping Internship - ANTIspaces GmbH
+         ANTI
+         https://de.linkedin.com/jobs/view/finance-and-bookkeeping-internship-antispaces-gmbh-at-anti-4428870555
+     22. Data Science Internship, LLM & Generative AI (German-Speaking)
+         AI Superior
+         https://de.linkedin.com/jobs/view/data-science-internship-llm-generative-ai-german-speaking-at-ai-superior-4428824121
+     23. Working Student (f/m/d) Sustainability & Fleet Decarbonization
+         Siemens Healthineers
+         https://de.linkedin.com/jobs/view/working-student-f-m-d-sustainability-fleet-decarbonization-at-siemens-healthineers-4425787981
+     24. AI & Management Consulting Intern (Value Engineering - DACH Market)
+         Process Analytics Factory - PAFnow by Celonis
+         https://de.linkedin.com/jobs/view/ai-management-consulting-intern-value-engineering-dach-market-at-process-analytics-factory-pafnow-by-celonis-4427740189
+     25. Pedagogy Manager (Full-Time)
+         42 Wolfsburg
+         https://de.linkedin.com/jobs/view/pedagogy-manager-full-time-at-42-wolfsburg-4425778217
+     26. Working Student (f/m/x) - LiDAR Sensors Integration on a Drone Swarm
+         German Aerospace Center (DLR)
+         https://de.linkedin.com/jobs/view/working-student-f-m-x-lidar-sensors-integration-on-a-drone-swarm-at-german-aerospace-center-dlr-4427010755
+     27. IT Operations & Project Coordinator
+         Centre People Appointments
+         https://de.linkedin.com/jobs/view/it-operations-project-coordinator-at-centre-people-appointments-4428884629
+     28. AI & Management Consulting Intern (Value Engineering - DACH Market)
+         Celonis
+         https://de.linkedin.com/jobs/view/ai-management-consulting-intern-value-engineering-dach-market-at-celonis-4425789206
+     29. Junior Product Engineer (f/m/d)
+         VoiceLine
+         https://de.linkedin.com/jobs/view/junior-product-engineer-f-m-d-at-voiceline-4425792203
+     30. Operations Process Management Intern - Germany
+         Sungrow Europe
+         https://de.linkedin.com/jobs/view/operations-process-management-intern-germany-at-sungrow-europe-4428692852
+     31. Intern (European Competition practice) - m/f/d
+         Charles River Associates
+         https://de.linkedin.com/jobs/view/intern-european-competition-practice-m-f-d-at-charles-river-associates-4186440488
+     32. Creator Operations Project Intern (TikTok LIVE) - 2026 Start (BS/MS)
+         TikTok
+         https://de.linkedin.com/jobs/view/creator-operations-project-intern-tiktok-live-2026-start-bs-ms-at-tiktok-4306624934
+     33. Internship Sustainability Performance Management (freiw. Praktikum)
+         Airbus Aircraft
+         https://de.linkedin.com/jobs/view/internship-sustainability-performance-management-freiw-praktikum-at-airbus-aircraft-4426416591
+     34. Thesis time series databases - Cloud Backend
+         Liebherr Group
+         https://de.linkedin.com/jobs/view/thesis-time-series-databases-cloud-backend-at-liebherr-group-4368968956
+     35. Management Trainee (m/f/d) Logistic Operations - Mandarin Speaker
+         J&T Express Germany GmbH
+         https://de.linkedin.com/jobs/view/management-trainee-m-f-d-logistic-operations-mandarin-speaker-at-j-t-express-germany-gmbh-4428813164
+     36. Insurance Intern - Germany
+         Sungrow Europe
+         https://de.linkedin.com/jobs/view/insurance-intern-germany-at-sungrow-europe-4428867008
+     37. Interdisciplinary (Technical Lead), GS-08XX-13 (04758) (DHA)
+         US Army Corps of Engineers
+         https://de.linkedin.com/jobs/view/interdisciplinary-technical-lead-gs-08xx-13-04758-dha-at-us-army-corps-of-engineers-4427482824
+     38. 2026 Applied Scientist Intern, Amazon University Talent Acquisition
+         Amazon
+         https://de.linkedin.com/jobs/view/2026-applied-scientist-intern-amazon-university-talent-acquisition-at-amazon-4369755791
+     39. Graduate Civil Engineer
+         Future Engineering Recruitment Ltd
+         https://de.linkedin.com/jobs/view/graduate-civil-engineer-at-future-engineering-recruitment-ltd-4429101016
+     40. PhD Student in cardiovascular immunology (m/w/d)
+         LMU Klinikum München
+         https://de.linkedin.com/jobs/view/phd-student-in-cardiovascular-immunology-m-w-d-at-lmu-klinikum-m%C3%BCnchen-4424338108
+     41. Curriculum Specialist, 2 Hour Learning (Remote) - $60,000/year USD
+         Crossover
+         https://de.linkedin.com/jobs/view/curriculum-specialist-2-hour-learning-remote-%2460-000-year-usd-at-crossover-4425892520
+     42. PhD position - Mitochondrial membrane protein structure and function
+         Forschungszentrum Jülich
+         https://de.linkedin.com/jobs/view/phd-position-mitochondrial-membrane-protein-structure-and-function-at-forschungszentrum-j%C3%BClich-4425788705
+     43. Electrical Engineer, GS-0850-13 (99754) (DHA)
+         US Army Corps of Engineers
+         https://de.linkedin.com/jobs/view/electrical-engineer-gs-0850-13-99754-dha-at-us-army-corps-of-engineers-4427490120
+     44. Graduate Fire Protection Design Engineer
+         Mercury
+         https://de.linkedin.com/jobs/view/graduate-fire-protection-design-engineer-at-mercury-4369161926
+     45. Backend Engineer (f/m/d) Node.js
+         IU International University of Applied Sciences
+         https://de.linkedin.com/jobs/view/backend-engineer-f-m-d-node-js-at-iu-international-university-of-applied-sciences-4427486667
+     46. Backend Engineer (f/m/d) Node.js
+         IU International University of Applied Sciences
+         https://de.linkedin.com/jobs/view/backend-engineer-f-m-d-node-js-at-iu-international-university-of-applied-sciences-4427484828
+     47. Backend Engineer (f/m/d) Node.js
+         IU International University of Applied Sciences
+         https://de.linkedin.com/jobs/view/backend-engineer-f-m-d-node-js-at-iu-international-university-of-applied-sciences-4427499082
+     48. Backend Engineer (f/m/d) Node.js
+         IU International University of Applied Sciences
+         https://de.linkedin.com/jobs/view/backend-engineer-f-m-d-node-js-at-iu-international-university-of-applied-sciences-4427492163
+     49. Backend Engineer (f/m/d) Node.js
+         IU International University of Applied Sciences
+         https://de.linkedin.com/jobs/view/backend-engineer-f-m-d-node-js-at-iu-international-university-of-applied-sciences-4427497084
+     50. Backend Engineer (f/m/d) Node.js
+         IU International University of Applied Sciences
+         https://de.linkedin.com/jobs/view/backend-engineer-f-m-d-node-js-at-iu-international-university-of-applied-sciences-4427492164
+     51. Business Development Representative (BDR) SMB (German Speaking)
+         Secfix
+         https://de.linkedin.com/jobs/view/business-development-representative-bdr-smb-german-speaking-at-secfix-4428868943
+     52. Business Development Representative (BDR) Mid-Market (German Speaking)
+         Secfix
+         https://de.linkedin.com/jobs/view/business-development-representative-bdr-mid-market-german-speaking-at-secfix-4428861852
+     53. Student Assistant (Data Research & Insights)
+         SimCorp
+         https://de.linkedin.com/jobs/view/student-assistant-data-research-insights-at-simcorp-4428861526
+     54. Founders Associate Intern - Data & AI Development (m/w/d) @Studio Natura
+         Studio Natura
+         https://de.linkedin.com/jobs/view/founders-associate-intern-data-ai-development-m-w-d-%40studio-natura-at-studio-natura-4425782636
+     55. (Intern) Entrepreneur in Residence
+         Tacto
+         https://de.linkedin.com/jobs/view/intern-entrepreneur-in-residence-at-tacto-4369721289
+     56. Intern-Advanced Innovation Portfolio and Strategy (d/f/m) - Focus Market- and Technology Analysis
+         Schaeffler
+         https://de.linkedin.com/jobs/view/intern-advanced-innovation-portfolio-and-strategy-d-f-m-focus-market-and-technology-analysis-at-schaeffler-4428854541
+     57. Business Development Project Intern (E-Commerce-Operations) - 2026 Start (BS/MS)
+         TikTok
+         https://de.linkedin.com/jobs/view/business-development-project-intern-e-commerce-operations-2026-start-bs-ms-at-tiktok-4307300985
+     58. Internship in Logistics Engineering (all genders)
+         Bayer
+         https://de.linkedin.com/jobs/view/internship-in-logistics-engineering-all-genders-at-bayer-4428822432
+     59. Internship in Logistics Engineering (all genders)
+         Bayer
+         https://de.linkedin.com/jobs/view/internship-in-logistics-engineering-all-genders-at-bayer-4428832262
+     60. Master thesis/Internship - Lab Automation & Dissolution studies (all genders)
+         Merck Life Science
+         https://de.linkedin.com/jobs/view/master-thesis-internship-lab-automation-dissolution-studies-all-genders-at-merck-life-science-4428835509
+
+=================================================================
+  📈 Searches run:      2
+     Total jobs:        119
+     Unique companies:  76
+=================================================================
+
+📄 CSV saved → output/jobs.csv  (119 jobs)
+
+✅ Done! 119 jobs → output/jobs.csv
+
+[2026-06-15 20:25:46] 📊 Step 2: Ranking jobs...
+/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/google/api_core/_python_version_support.py:273: FutureWarning: You are using a Python version (3.10.20) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+/home/chefhaider/Repositories/job-agent/src/rank_jobs.py:4: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+You are a career assistant.
+
+Given the candidate profile and a list of job titles, sort the jobs from most relevant
+to least relevant for the candidate.
+
+Important:
+- Return ONLY valid JSON.
+- Do NOT include explanations.
+- Do NOT include scores.
+- Return the rows in sorted order from most relevant to least relevant.
+
+Return JSON in exactly this format:
+{
+  "ordered_row_ids": [3, 0, 2, 1]
+}
+
+Candidate profile:
+I am a mahcine learning engineer with roughly three years of expereince, in my last semester of my msc AI program. 
+I have experince in vast array of tools and sub domains in the following order pf expertise:
+CV, mlops, audio processing, NLP,ai in health care, data engineering, data analytics, full stack development for ai and llm.
+the following roles suite me entry level fulltime, working student, and intern
+
+Jobs:
+[{"row_id": 0, "company": "", "job_title": "AI Engineer (m/w/d)"}, {"row_id": 1, "company": "", "job_title": "Graduate AI software engineer"}, {"row_id": 2, "company": "", "job_title": "Data Scientist"}, {"row_id": 3, "company": "", "job_title": "Founding Data Scientist"}, {"row_id": 4, "company": "", "job_title": "Data Scientist"}, {"row_id": 5, "company": "", "job_title": "Applied AI Developer / Data Engineer (m/f/d)"}, {"row_id": 6, "company": "", "job_title": "Data Scientist (Financial Trading - Time-Series)"}, {"row_id": 7, "company": "", "job_title": "Robotics Software Engineer (m/w/d)"}, {"row_id": 8, "company": "", "job_title": "Lead Machine Learning Engineer"}, {"row_id": 9, "company": "", "job_title": "(Senior) Data Scientist - Credit Risk (m/w/d)"}, {"row_id": 10, "company": "", "job_title": "Data Scientist"}, {"row_id": 11, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 12, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 13, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 14, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 15, "company": "", "job_title": "Data Scientist Finance (m/f/d)"}, {"row_id": 16, "company": "", "job_title": "Software Engineer (AI Training) — Remote Contract"}, {"row_id": 17, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 18, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 19, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 20, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 21, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 22, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 23, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 24, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 25, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 26, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 27, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 28, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 29, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 30, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 31, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 32, "company": "", "job_title": "Senior ML Engineer (Token Factory)"}, {"row_id": 33, "company": "", "job_title": "Graduate software engineer"}, {"row_id": 34, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 35, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 36, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 37, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 38, "company": "", "job_title": "Senior Data Scientist, Retail Media (m/f/d)"}, {"row_id": 39, "company": "", "job_title": "Software Engineer (AI Training)"}, {"row_id": 40, "company": "", "job_title": "Data Scientist / AI Consultant (m/w/d)"}, {"row_id": 41, "company": "", "job_title": "Data Scientist / AI Consultant (m/w/d)"}, {"row_id": 42, "company": "", "job_title": "Research Software Engineer - User Configurable AI-Ready Datasets"}, {"row_id": 43, "company": "", "job_title": "Junior Software Engineer"}, {"row_id": 44, "company": "", "job_title": "Junior Software Engineer"}, {"row_id": 45, "company": "", "job_title": "Data Engineer (m/w/d)"}, {"row_id": 46, "company": "", "job_title": "Full-Stack ML Engineer - Data Products (m/f/d)"}, {"row_id": 47, "company": "", "job_title": "Senior DataOps Engineer / Software Engineer"}, {"row_id": 48, "company": "", "job_title": "Software Engineer"}, {"row_id": 49, "company": "", "job_title": "Senior Software Engineer, Applied AI"}, {"row_id": 50, "company": "", "job_title": "Senior Software Engineer – KI Agenten (all people)"}, {"row_id": 51, "company": "", "job_title": "(Junior) Finance Data Scientist (w/m/d)"}, {"row_id": 52, "company": "", "job_title": "Data Scientist / AI Consultant (m/w/d)"}, {"row_id": 53, "company": "", "job_title": "Abschlussarbeit Machine Learning (all genders)"}, {"row_id": 54, "company": "", "job_title": "Software Engineer / Architect / Designer"}, {"row_id": 55, "company": "", "job_title": "Data Engineer"}, {"row_id": 56, "company": "", "job_title": "Senior AI Software Engineer (all genders) in Berlin"}, {"row_id": 57, "company": "", "job_title": "Software Engineer - Data & AI Platform - STACKIT (m/w/d)"}, {"row_id": 58, "company": "", "job_title": "Cofounder of a climatech startup - AI/ML Expert - Full Stack Developer/Data Scientist"}, {"row_id": 59, "company": "", "job_title": "Working Student (f/m/d) Commercial Partnerships"}, {"row_id": 60, "company": "", "job_title": "Working Student Marketing (m/f/x)"}, {"row_id": 61, "company": "", "job_title": "Working Student Marketing - Internal Communications (f/m/d)"}, {"row_id": 62, "company": "", "job_title": "HR Reporting & Analytics Intern"}, {"row_id": 63, "company": "", "job_title": "Working Student - Radar Coexistence & Interference Analysis"}, {"row_id": 64, "company": "", "job_title": "Werkstudent (m/w/d) B2B Marketing"}, {"row_id": 65, "company": "", "job_title": "Working Student/ Werkstudent (m/f/d) - Bipolar Transistors"}, {"row_id": 66, "company": "", "job_title": "Engineering Operations Intern"}, {"row_id": 67, "company": "", "job_title": "Internship Aftermarket Quality"}, {"row_id": 68, "company": "", "job_title": "Working Student (f/m/d) Sustainable by Design / Customer Insights & Value"}, {"row_id": 69, "company": "", "job_title": "Recruitment Intern"}, {"row_id": 70, "company": "", "job_title": "Working Student Business Controlling – Solar & Batteries (f/m/d)"}, {"row_id": 71, "company": "", "job_title": "Student position: Construction of an eddy current test system"}, {"row_id": 72, "company": "", "job_title": "Working Student People & Organisation (Learning & Development) (all genders)"}, {"row_id": 73, "company": "", "job_title": "Werkstudent:in IT Support & Data Governance (m/w/d)"}, {"row_id": 74, "company": "", "job_title": "Operations Intern"}, {"row_id": 75, "company": "", "job_title": "Student (m/f/d) - Computer Science, Mathematics, Data Science, Physics, or similar"}, {"row_id": 76, "company": "", "job_title": "QUANTITATIVE CONSULTANT FRANKFURT/DÜSSELDORF"}, {"row_id": 77, "company": "", "job_title": "Working Student - Robotics Software Application (m/f/d)"}, {"row_id": 78, "company": "", "job_title": "Working Student (m/f/d) AI & Automation Engineer"}, {"row_id": 79, "company": "", "job_title": "Finance and Bookkeeping Internship - ANTIspaces GmbH"}, {"row_id": 80, "company": "", "job_title": "Data Science Internship, LLM & Generative AI (German-Speaking)"}, {"row_id": 81, "company": "", "job_title": "Working Student (f/m/d) Sustainability & Fleet Decarbonization"}, {"row_id": 82, "company": "", "job_title": "AI & Management Consulting Intern (Value Engineering - DACH Market)"}, {"row_id": 83, "company": "", "job_title": "Pedagogy Manager (Full-Time)"}, {"row_id": 84, "company": "", "job_title": "Working Student (f/m/x) - LiDAR Sensors Integration on a Drone Swarm"}, {"row_id": 85, "company": "", "job_title": "IT Operations & Project Coordinator"}, {"row_id": 86, "company": "", "job_title": "AI & Management Consulting Intern (Value Engineering - DACH Market)"}, {"row_id": 87, "company": "", "job_title": "Junior Product Engineer (f/m/d)"}, {"row_id": 88, "company": "", "job_title": "Operations Process Management Intern - Germany"}, {"row_id": 89, "company": "", "job_title": "Intern (European Competition practice) - m/f/d"}, {"row_id": 90, "company": "", "job_title": "Creator Operations Project Intern (TikTok LIVE) - 2026 Start (BS/MS)"}, {"row_id": 91, "company": "", "job_title": "Internship Sustainability Performance Management (freiw. Praktikum)"}, {"row_id": 92, "company": "", "job_title": "Thesis time series databases - Cloud Backend"}, {"row_id": 93, "company": "", "job_title": "Management Trainee (m/f/d) Logistic Operations - Mandarin Speaker"}, {"row_id": 94, "company": "", "job_title": "Insurance Intern - Germany"}, {"row_id": 95, "company": "", "job_title": "Interdisciplinary (Technical Lead), GS-08XX-13 (04758) (DHA)"}, {"row_id": 96, "company": "", "job_title": "2026 Applied Scientist Intern, Amazon University Talent Acquisition"}, {"row_id": 97, "company": "", "job_title": "Graduate Civil Engineer"}, {"row_id": 98, "company": "", "job_title": "PhD Student in cardiovascular immunology (m/w/d)"}, {"row_id": 99, "company": "", "job_title": "Curriculum Specialist, 2 Hour Learning (Remote) - $60,000/year USD"}, {"row_id": 100, "company": "", "job_title": "PhD position - Mitochondrial membrane protein structure and function"}, {"row_id": 101, "company": "", "job_title": "Electrical Engineer, GS-0850-13 (99754) (DHA)"}, {"row_id": 102, "company": "", "job_title": "Graduate Fire Protection Design Engineer"}, {"row_id": 103, "company": "", "job_title": "Backend Engineer (f/m/d) Node.js"}, {"row_id": 104, "company": "", "job_title": "Backend Engineer (f/m/d) Node.js"}, {"row_id": 105, "company": "", "job_title": "Backend Engineer (f/m/d) Node.js"}, {"row_id": 106, "company": "", "job_title": "Backend Engineer (f/m/d) Node.js"}, {"row_id": 107, "company": "", "job_title": "Backend Engineer (f/m/d) Node.js"}, {"row_id": 108, "company": "", "job_title": "Backend Engineer (f/m/d) Node.js"}, {"row_id": 109, "company": "", "job_title": "Business Development Representative (BDR) SMB (German Speaking)"}, {"row_id": 110, "company": "", "job_title": "Business Development Representative (BDR) Mid-Market (German Speaking)"}, {"row_id": 111, "company": "", "job_title": "Student Assistant (Data Research & Insights)"}, {"row_id": 112, "company": "", "job_title": "Founders Associate Intern - Data & AI Development (m/w/d) @Studio Natura"}, {"row_id": 113, "company": "", "job_title": "(Intern) Entrepreneur in Residence"}, {"row_id": 114, "company": "", "job_title": "Intern-Advanced Innovation Portfolio and Strategy (d/f/m) - Focus Market- and Technology Analysis"}, {"row_id": 115, "company": "", "job_title": "Business Development Project Intern (E-Commerce-Operations) - 2026 Start (BS/MS)"}, {"row_id": 116, "company": "", "job_title": "Internship in Logistics Engineering (all genders)"}, {"row_id": 117, "company": "", "job_title": "Internship in Logistics Engineering (all genders)"}, {"row_id": 118, "company": "", "job_title": "Master thesis/Internship - Lab Automation & Dissolution studies (all genders)"}]
+Trying Gemini: gemini-2.5-flash
+Saved sorted jobs to: output/jobs_sorted.csv
+Model used: gemini/gemini-2.5-flash
+[2026-06-15 20:26:36] 📝 Step 3: Extracting job descriptions...
+
+  📋 Loaded 119 jobs from output/jobs_sorted.csv
+  ℹ️  Limited to first 20 jobs (--limit flag)
+  ✅ Chrome: /usr/bin/google-chrome  (Google Chrome 147.0.7727.137)
+
+  🚀 Launching Chrome (headless=True)…
+  ✅ Browser ready.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [1/20]  AI Engineer (m/w/d)  —  Synergeticon GmbH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/ai-engineer-m-w-d-at-synergeticon-gmbh-4425755668
+    ✅ Got description (3797 chars) via div.show-more-less-html__markup
+  📊 Progress: 1/20  |  ✅ 1 extracted
+  ⏳ Waiting 9.0s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [2/20]  Graduate AI software engineer  —  Bending Spoons
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/graduate-ai-software-engineer-at-bending-spoons-4427436716
+    ✅ Got description (7642 chars) via div.show-more-less-html__markup
+  📊 Progress: 2/20  |  ✅ 2 extracted
+  ⏳ Waiting 6.5s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [3/20]  Full-Stack ML Engineer - Data Products (m/f/d)  —  Statista
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/full-stack-ml-engineer-data-products-m-f-d-at-statista-4404432746
+    ✅ Got description (3223 chars) via div.show-more-less-html__markup
+  📊 Progress: 3/20  |  ✅ 3 extracted
+  ⏳ Waiting 9.8s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [4/20]  Applied AI Developer / Data Engineer (m/f/d)  —  Electronic components by Würth Elektronik
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/applied-ai-developer-data-engineer-m-f-d-at-electronic-components-by-w%C3%BCrth-elektronik-4425777084
+    ✅ Got description (4440 chars) via div.show-more-less-html__markup
+  📊 Progress: 4/20  |  ✅ 4 extracted
+  ⏳ Waiting 8.6s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [5/20]  Cofounder of a climatech startup - AI/ML Expert - Full Stack Developer/Data Scientist  —  Carbon13
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/cofounder-of-a-climatech-startup-ai-ml-expert-full-stack-developer-data-scientist-at-carbon13-4416629643
+    ✅ Got description (6427 chars) via div.show-more-less-html__markup
+  📊 Progress: 5/20  |  ✅ 5 extracted
+  ⏳ Waiting 8.5s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [6/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664422
+    ✅ Got description (2914 chars) via div.show-more-less-html__markup
+  📊 Progress: 6/20  |  ✅ 6 extracted
+  ⏳ Waiting 6.1s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [7/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679284
+    ✅ Got description (2914 chars) via div.show-more-less-html__markup
+  📊 Progress: 7/20  |  ✅ 7 extracted
+  ⏳ Waiting 7.6s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [8/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428677298
+    ✅ Got description (2911 chars) via div.show-more-less-html__markup
+  📊 Progress: 8/20  |  ✅ 8 extracted
+  ⏳ Waiting 6.9s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [9/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428669290
+    ✅ Got description (2913 chars) via div.show-more-less-html__markup
+  📊 Progress: 9/20  |  ✅ 9 extracted
+  ⏳ Waiting 7.6s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [10/20]  Software Engineer (AI Training) — Remote Contract  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-%E2%80%94-remote-contract-at-alignerr-4428667345
+    ✅ Got description (2911 chars) via div.show-more-less-html__markup
+  📊 Progress: 10/20  |  ✅ 10 extracted
+  ⏳ Waiting 8.5s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [11/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428667353
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 11/20  |  ✅ 11 extracted
+  ⏳ Waiting 8.1s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [12/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428673301
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 12/20  |  ✅ 12 extracted
+  ⏳ Waiting 8.3s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [13/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428680246
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 13/20  |  ✅ 13 extracted
+  ⏳ Waiting 8.7s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [14/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664435
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 14/20  |  ✅ 14 extracted
+  ⏳ Waiting 9.5s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [15/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428675281
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 15/20  |  ✅ 15 extracted
+  ⏳ Waiting 8.9s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [16/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679263
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 16/20  |  ✅ 16 extracted
+  ⏳ Waiting 8.3s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [17/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428678268
+    ✅ Got description (2912 chars) via div.show-more-less-html__markup
+  📊 Progress: 17/20  |  ✅ 17 extracted
+  ⏳ Waiting 8.6s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [18/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428679281
+    ✅ Got description (2914 chars) via div.show-more-less-html__markup
+  📊 Progress: 18/20  |  ✅ 18 extracted
+  ⏳ Waiting 9.4s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [19/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428666339
+  ❌ Navigation failed: Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428666339
+Call log:
+  - navigating to "https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428666339", waiting until "domcontentloaded"
+
+  📊 Progress: 19/20  |  ✅ 18 extracted
+  ⏳ Waiting 8.6s…
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [20/20]  Software Engineer (AI Training)  —  Alignerr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🌐 https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664454
+  ❌ Navigation failed: Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664454
+Call log:
+  - navigating to "https://de.linkedin.com/jobs/view/software-engineer-ai-training-at-alignerr-4428664454", waiting until "domcontentloaded"
+
+  📊 Progress: 20/20  |  ✅ 18 extracted
+
+  🔒 Browser closed.
+
+=================================================================
+  📋 RESULTS SUMMARY  (20 jobs)
+=================================================================
+  ✅   1. AI Engineer (m/w/d)
+          Synergeticon GmbH
+          3797 chars  |  https://de.linkedin.com/jobs/view/ai-engineer-m-w-d-at-syner…
+  ✅   2. Graduate AI software engineer
+          Bending Spoons
+          7642 chars  |  https://de.linkedin.com/jobs/view/graduate-ai-software-engin…
+  ✅   3. Full-Stack ML Engineer - Data Products (m/f/d)
+          Statista
+          3223 chars  |  https://de.linkedin.com/jobs/view/full-stack-ml-engineer-dat…
+  ✅   4. Applied AI Developer / Data Engineer (m/f/d)
+          Electronic components by Würth Elektronik
+          4440 chars  |  https://de.linkedin.com/jobs/view/applied-ai-developer-data-…
+  ✅   5. Cofounder of a climatech startup - AI/ML Expert - Full Stack Developer/Data Scientist
+          Carbon13
+          6427 chars  |  https://de.linkedin.com/jobs/view/cofounder-of-a-climatech-s…
+  ✅   6. Software Engineer (AI Training)
+          Alignerr
+          2914 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅   7. Software Engineer (AI Training)
+          Alignerr
+          2914 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅   8. Software Engineer (AI Training)
+          Alignerr
+          2911 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅   9. Software Engineer (AI Training)
+          Alignerr
+          2913 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  10. Software Engineer (AI Training) — Remote Contract
+          Alignerr
+          2911 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  11. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  12. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  13. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  14. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  15. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  16. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  17. Software Engineer (AI Training)
+          Alignerr
+          2912 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ✅  18. Software Engineer (AI Training)
+          Alignerr
+          2914 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ❌  19. Software Engineer (AI Training)
+          Alignerr
+          0 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+  ❌  20. Software Engineer (AI Training)
+          Alignerr
+          0 chars  |  https://de.linkedin.com/jobs/view/software-engineer-ai-train…
+=================================================================
+
+💾 JSON saved → output/job_descriptions.json
+   ✅ 18 / 20 descriptions extracted
+   ❌ 2 failed
+
+✅ All done!  →  output/job_descriptions.json
+
+[2026-06-15 20:59:14] 🎓 Step 4: Building resumes...
+🚀 Processing 20 jobs via GitHub Models...
+
+[1/20] Synergeticon GmbH — AI Engineer (m/w/d)
+  Trying GitHub Model: gpt-4o... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: phi-4-reasoning... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: gpt-4o-mini... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: phi-4-mini-instruct... ✗ Unexpected Error: (Connection error.)
+❌ All GitHub models failed or exhausted rate limit pools for this job.
+  ⚠️  LLM completely failed. Skipping this job entry.
+[2/20] Bending Spoons — Graduate AI software engineer
+  Trying GitHub Model: gpt-4o... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: phi-4-reasoning... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: gpt-4o-mini... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: phi-4-mini-instruct... ✗ Unexpected Error: (Connection error.)
+❌ All GitHub models failed or exhausted rate limit pools for this job.
+  ⚠️  LLM completely failed. Skipping this job entry.
+[3/20] Statista — Full-Stack ML Engineer - Data Products (m/f/d)
+  Trying GitHub Model: gpt-4o... ✗ Unexpected Error: (Connection error.)
+  Trying GitHub Model: phi-4-reasoning... Traceback (most recent call last):
+  File "/home/chefhaider/Repositories/job-agent/src/resume_builder.py", line 244, in <module>
+    build_resumes()
+  File "/home/chefhaider/Repositories/job-agent/src/resume_builder.py", line 200, in build_resumes
+    raw, model_used = call_llm(prompt)
+  File "/home/chefhaider/Repositories/job-agent/src/resume_builder.py", line 109, in call_llm
+    resp = client.chat.completions.create(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 1251, in create
+    return self._post(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/_base_client.py", line 1037, in request
+    response = self._send_request(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/_client.py", line 440, in _send_request
+    return self._send_with_auth_retry(request, stream=stream, **kwargs)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/_client.py", line 418, in _send_with_auth_retry
+    response = super()._send_request(request, stream=stream, **kwargs)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/openai/_base_client.py", line 964, in _send_request
+    return self._client.send(request, stream=stream, **kwargs)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/ssl.py", line 1292, in recv
+    return self.read(buflen)
+  File "/home/chefhaider/miniconda3/envs/jap/lib/python3.10/ssl.py", line 1165, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+[2026-06-15 21:08:10] 🚀 Pipeline started at 21:08:10
+[2026-06-15 21:08:10] 🎓 Step 4: Building resumes...
+🚀 Processing 20 jobs via GitHub Models...
+
+[1/20] Synergeticon GmbH — AI Engineer (m/w/d)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_645878.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[2/20] Bending Spoons — Graduate AI software engineer
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_993196.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[3/20] Statista — Full-Stack ML Engineer - Data Products (m/f/d)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_206579.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[4/20] Electronic components by Würth Elektronik — Applied AI Developer / Data Engineer (m/f/d)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_432144.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[5/20] Carbon13 — Cofounder of a climatech startup - AI/ML Expert - Full Stack Developer/Data Scientist
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_379760.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[6/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_870783.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[7/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_411772.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[8/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_678068.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[9/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_711642.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[10/20] Alignerr — Software Engineer (AI Training) — Remote Contract
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_177753.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[11/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_106337.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[12/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_628341.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[13/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_782773.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[14/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_499765.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[15/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_169636.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[16/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_881043.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[17/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_212381.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[18/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_319142.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[19/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_799510.pdf
+  ⏳ Waiting 90.0s to respect the gpt-4o token pool budget...
+[20/20] Alignerr — Software Engineer (AI Training)
+  Trying GitHub Model: gpt-4o... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_387492.pdf
+
+✅ Pipeline Complete! Output tracked inside: output/job_descriptions.json
+[2026-06-15 23:40:11] 🚀 Pipeline started at 23:40:11
+[2026-06-15 23:40:23] 🚀 Pipeline started at 23:40:23
+[2026-06-15 23:40:23] 🎓 Step 4.2: Building cover letter...
+/home/chefhaider/miniconda3/envs/jap/lib/python3.10/site-packages/google/api_core/_python_version_support.py:273: FutureWarning: You are using a Python version (3.10.20) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+/home/chefhaider/Repositories/job-agent/src/cover_letter.py:8: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+🚀 Generating cover letters for 20 jobs...
+
+[1/20] Synergeticon GmbH — AI Engineer (m/w/d)
+  📝 Prompt saved: output/muhammad_haider_240029_cover_input.txt
+  Trying Gemini gemini-2.5-flash... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_240029_cover.pdf
+  ⏳ Waiting 480s before next job...
+[2/20] Bending Spoons — Graduate AI software engineer
+  📝 Prompt saved: output/muhammad_haider_391738_cover_input.txt
+  Trying Gemini gemini-2.5-flash... ✗ (429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash
+Please retry in 38.064470043s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 38
+}
+])
+  Trying Gemini gemini-3.1-flash-lite... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_391738_cover.pdf
+  ⏳ Waiting 480s before next job...
+[3/20] Statista — Full-Stack ML Engineer - Data Products (m/f/d)
+  📝 Prompt saved: output/muhammad_haider_646201_cover_input.txt
+  Trying Gemini gemini-2.5-flash... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_646201_cover.pdf
+  ⏳ Waiting 480s before next job...
+[4/20] Electronic components by Würth Elektronik — Applied AI Developer / Data Engineer (m/f/d)
+  📝 Prompt saved: output/muhammad_haider_503258_cover_input.txt
+  Trying Gemini gemini-2.5-flash... ✓
+  ✅ /home/chefhaider/Repositories/job-agent/output/muhammad_haider_503258_cover.pdf
+  ⏳ Waiting 480s before next job...
+[5/20] Carbon13 — Cofounder of a climatech startup - AI/ML Expert - Full Stack Developer/Data Scientist
+  📝 Prompt saved: output/muhammad_haider_553268_cover_input.txt
+  Trying Gemini gemini-2.5-flash... 

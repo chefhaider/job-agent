@@ -216,7 +216,7 @@ def build_cover_letters(
         compiled = compile_latex_to_pdf(tex_file, pdf_path, keep_aux=False)
 
         if compiled:
-            job["cover_letter_file_path"] = f"/home/chefhaider/Repositories/job_automation/output/{pdf_name}"
+            job["cover_letter_file_path"] = f"/home/chefhaider/Repositories/job-agent/output/{pdf_name}"
             print(f"  ✅ {job['cover_letter_file_path']}")
         else:
             job["cover_letter_file_path"] = input_txt_path

@@ -219,10 +219,10 @@ def build_resumes(
         compiled = compile_latex_to_pdf(tex_file, pdf_path, keep_aux=False)
 
         if compiled:
-            job["resume_file_path"] = f"/home/chefhaider/Repositories/job_automation/output/{pdf_name}"
+            job["resume_file_path"] = f"/home/chefhaider/Repositories/job-agent/output/{pdf_name}"
             print(f"  ✅ {job['resume_file_path']}")
         else:
-            job["resume_file_path"] = f"/home/chefhaider/Repositories/job_automation/output/{input_txt_name}"
+            job["resume_file_path"] = f"/home/chefhaider/Repositories/job-agent/output/{input_txt_name}"
             print(f"  ⚠️  LaTeX compilation failed. Saved alternative raw text here: {job['resume_file_path']}")
 
         # ── Rate Limit Preservation Sleep Mechanism ──

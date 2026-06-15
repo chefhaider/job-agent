@@ -21,10 +21,10 @@ OUTPUT_CSV = "output/jobs_sorted.csv"
 # ── Your professional summary ────────────────────────────────────────────────
 
 MY_PROFILE = """
-I am a mahcine learning engineer with roughly three years of expereince, in my last semester of my msc AI program. 
+I am a mahcine learning engineer with roughly three years of expereince, working on my thesis of my msc AI program. 
 I have experince in vast array of tools and sub domains in the following order pf expertise:
 CV, mlops, audio processing, NLP,ai in health care, data engineering, data analytics, full stack development for ai and llm.
-the following roles suite me entry level fulltime, working student, and intern
+the following roles suite me entry level fulltime, working student, and intern, skip jobs for thesis and alignerr
 """.strip()
 
 
