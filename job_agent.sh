@@ -45,17 +45,17 @@ log "🚀 Pipeline started at $(date '+%H:%M:%S')"
 
 
 # ── Pipeline Steps ────────────────────────────────────────────────────────────
-# log "📥 Step 1: Scraping LinkedIn jobs..."
-# "$CONDA_PYTHON" src/linkedin.py --headless --output jobs.csv >> "$LOG_FILE" 2>&1
+log "📥 Step 1: Scraping LinkedIn jobs..."
+"$CONDA_PYTHON" src/linkedin.py --headless --output jobs.csv >> "$LOG_FILE" 2>&1
 
-# log "📊 Step 2: Ranking jobs..."
-# "$CONDA_PYTHON" src/rank_jobs.py >> "$LOG_FILE" 2>&1
+log "📊 Step 2: Ranking jobs..."
+"$CONDA_PYTHON" src/rank_jobs.py >> "$LOG_FILE" 2>&1
 
-# log "📝 Step 3: Extracting job descriptions..."
-# "$CONDA_PYTHON" src/job_description.py --headless --limit 20 >> "$LOG_FILE" 2>&1
+log "📝 Step 3: Extracting job descriptions..."
+"$CONDA_PYTHON" src/job_description.py --headless --limit 20 >> "$LOG_FILE" 2>&1
 
-# log "🎓 Step 4: Building resumes..."
-# "$CONDA_PYTHON" src/resume_builder.py >> "$LOG_FILE" 2>&1
+log "🎓 Step 4: Building resumes..."
+"$CONDA_PYTHON" src/resume_builder.py >> "$LOG_FILE" 2>&1
 
 log "🎓 Step 4.2: Building cover letter..."
 "$CONDA_PYTHON" src/cover_letter.py >> "$LOG_FILE" 2>&1
